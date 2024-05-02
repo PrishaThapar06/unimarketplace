@@ -34,24 +34,33 @@ const SignUp = () => {
     })
 
     const signUp = () => {
-        setShowLoader(true);
-        createUserWithEmailAndPassword(auth, formFields.email, formFields.password)
-            .then((userCredential) => {
-                // Signed up 
-                const user = userCredential.user;
-                setShowLoader(false);
-                setFormFields({
-                    email:'',
-                    password:'',
-                    conformPassword:''
+        if(formFields.email!=="" && formFields.password!=="" && formFields.conformPassword!==""){
+            setShowLoader(true);
+            createUserWithEmailAndPassword(auth, formFields.email, formFields.password)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    setShowLoader(false);
+                    setFormFields({
+                        email:'',
+                        password:'',
+                        conformPassword:''
+                    })
+                    // ...
                 })
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-            });
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(error.message);
+                    setShowLoader(false);
+                    // ..
+                });
+        }
+
+        else{
+            alert("Please fill all the details");
+        }
+       
     }
 
 
