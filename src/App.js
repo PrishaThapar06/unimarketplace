@@ -12,7 +12,6 @@ import Listing from './pages/Listing';
 import NotFound from './pages/NotFound';
 import DetailsPage from './pages/Details';
 import Checkout from './pages/checkout';
-
 import axios from 'axios';
 import Cart from './pages/cart';
 import SignIn from './pages/SignIn';
@@ -34,11 +33,12 @@ function App() {
 
   const [isLogin, setIsLogin] = useState();
   const [isOpenFilters, setIsopenFilters] = useState(false);
+
   const [cartTotalAmount, setCartTotalAmount] = useState();
 
   useEffect(() => {
     // getData('http://localhost:5000/productData');
-    // getCartData("http://localhost:5000/cartItems");
+     getCartData("http://localhost:5000/cartItems");
 
     const is_Login = localStorage.getItem('isLogin');
     setIsLogin(is_Login);
@@ -53,37 +53,18 @@ function App() {
   
   }, []);
 
-  const getData = async (url) => {
-    try {
-      await axios.get(url).then((response) => {
-        setProductData(response.data);
-        setTimeout(()=>{
-          setIsloading(false);
-        },2000); 
-      })
-
-
-      await axios.get('https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=27dad2d0abd34a22965727ce8d939077').then((response) => {
-          console.log(response)
-      })
-
-
-
-    } catch (error) {
-      console.log(error.message);
-    }
-  }
+ 
 
   const getCartData = async (url) => {
     try {
-      await axios.get(url).then((response) => {
-        setCartItems(response.data);
-      })
+        await axios.get(url).then((response) => {
+            setCartItems(response.data);
+        })
 
     } catch (error) {
-      console.log(error.message);
+        console.log(error.message);
     }
-  }
+}
 
   const addToCart = async (item) => {
     item.quantity = 1;
@@ -100,9 +81,14 @@ function App() {
 
   }
 
-  const removeItemsFromCart = (id) => {
-    const arr = cartItems.filter((obj) => obj.id !== id);
-    setCartItems(arr)
+
+
+
+  const removeItemsFromCart = async(id) => {
+    const response = await axios.delete(`http://localhost:5000/cartItems/${id}`);
+    if (response !== null) {
+        getCartData("http://localhost:5000/cartItems");
+    }
   }
 
   const emptyCart = () => {
@@ -140,7 +126,9 @@ function App() {
     isopenNavigation,
     setIsopenNavigation,
     setCartTotalAmount,
-    cartTotalAmount
+    cartTotalAmount,
+    setCartItems,
+    cartItems
   }
 
   return (
