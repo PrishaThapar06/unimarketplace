@@ -19,50 +19,36 @@ const Cart = () => {
     const history = useNavigate();
 
     useEffect(() => {
-        if (context.isLogin === "true") {
-            getCartData("http://localhost:5000/cartItems");
-        } else {
-            history('/');
-        }
+       if(context.isLogin!=="true"){
+        history("/signIn");
+       }else{
+        setCartItems(context.cartItems);
+       }
+       
 
         window.scrollTo(0, 0);
 
-    }, [])
+    }, [context.cartItems])
 
-    const getCartData = async (url) => {
-        try {
-            await axios.get(url).then((response) => {
-                setCartItems(response.data);
-            })
-
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
-
-
-    const deleteItem = async (id) => {
-        const response = await axios.delete(`http://localhost:5000/cartItems/${id}`);
-        if (response !== null) {
-            getCartData("http://localhost:5000/cartItems");
-            context.removeItemsFromCart(id);
-        }
-    }
+  
 
 
 
-    const emptyCart = () => {
-        let response = null;
-        cartItems.length !== 0 &&
-            cartItems.map((item) => {
-                response = axios.delete(`http://localhost:5000/cartItems/${parseInt(item.id)}`);
-            })
-        if (response !== null) {
-            getCartData("http://localhost:5000/cartItems");
-        }
 
-        context.emptyCart();
-    }
+
+
+    // const emptyCart = () => {
+    //     let response = null;
+    //     cartItems.length !== 0 &&
+    //         cartItems.map((item) => {
+    //             response = axios.delete(`http://localhost:5000/cartItems/${parseInt(item.id)}`);
+    //         })
+    //     if (response !== null) {
+    //         getCartData("http://localhost:5000/cartItems");
+    //     }
+
+    //     context.emptyCart();
+    // }
 
 
     const updateCart = (items) => {
@@ -70,33 +56,7 @@ const Cart = () => {
     }
 
 
-    const makePayment = async () => {
-        const stripe = await loadStripe('pk_test_51OSafaSEi0nlwkT6fE5zbDHnNLjJoQ6INy7jZmoAycZjR0uPPxQ7Fv7eCKLfBELmCJ3vJK1pVWmMLC9c8X7xJTYK00l4lDuWMG');
-
-        const body = {
-            products: cartItems
-        }
-
-        const headers = {
-            "Content-Type": "application/json"
-        }
-
-        const response = await fetch("http://localhost:7000/api/create-checkout-session", {
-            method: 'POST',
-            headers: headers,
-            body: JSON.stringify(body)
-        })
-
-        const session = await response.json();
-
-        const result = stripe.redirectToCheckout({
-            sessionId: session.id
-        })
-
-        if (result.error) {
-            console.log(result.error)
-        }
-    }
+  
 
 
     return (
@@ -129,9 +89,6 @@ const Cart = () => {
                                     <h1 className='hd mb-0'>Your Cart</h1>
                                     <p>There are <span className='text-g'>3</span> products in your cart</p>
                                 </div>
-
-                                <span className='ml-auto clearCart d-flex align-items-center cursor '
-                                    onClick={() => emptyCart()}><DeleteOutlineOutlinedIcon /> Clear Cart</span>
 
                             </div>
 
@@ -187,7 +144,7 @@ const Cart = () => {
 
                                                             <td align='center'>
                                                                 <span className='cursor'
-                                                                    onClick={() => deleteItem(item.id)}
+                                                                    onClick={() => context.removeItemsFromCart(item.id)}
                                                                 ><DeleteOutlineOutlinedIcon /></span>
                                                             </td>
 
@@ -257,16 +214,14 @@ const Cart = () => {
 
 
                                 <br />
-
                                 <Link to={'/checkout'}>
                                     <Button className='btn-g btn-lg'
                                         onClick={() => {
-                                            context.setCartTotalAmount(cartItems.length !== 0 &&
+                                            context.setCartTotalAmount( cartItems.length !== 0 &&
                                                 cartItems.map(item => parseInt(item.price.split(",").join("")) * item.quantity).reduce((total, value) => total + value, 0))
                                         }}
                                     >Proceed To CheckOut</Button>
                                 </Link>
-
 
 
                             </div>
