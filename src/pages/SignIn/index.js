@@ -54,29 +54,37 @@ const SignIn = () => {
 
 
     const signIn = () => {
-        setShowLoader(true);
-        signInWithEmailAndPassword(auth, formFields.email, formFields.password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                setShowLoader(false);
-                setFormFields({
-                    email: '',
-                    password: '',
+        if(formFields.email!=="" && formFields.password!==""){
+            setShowLoader(true);
+            signInWithEmailAndPassword(auth, formFields.email, formFields.password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    setShowLoader(false);
+                    setFormFields({
+                        email: '',
+                        password: '',
+                    });
+    
+                    localStorage.setItem('isLogin',true); 
+                    context.signIn();   
+    
+                    history('/');
+    
+    
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                    setShowLoader(false);
                 });
-
-                localStorage.setItem('isLogin',true); 
-                context.signIn();   
-
-                history('/');
-
-
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-            });
+        }
+        
+        else{
+            alert("Please fill all the details");
+        }
 
     }
 
@@ -91,9 +99,6 @@ const SignIn = () => {
           const token = credential.accessToken;
           // The signed-in user info.
           const user = result.user;
-
-          localStorage.setItem('userEmail',user.email)
-          localStorage.setItem('userId',user.uid)
 
           setShowLoader(false);
 
