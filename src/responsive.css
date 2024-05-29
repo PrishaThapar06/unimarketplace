@@ -24,6 +24,11 @@
 @media only screen and (min-width:320px) and (max-width:400px){
   .homeProducts .productRow .item{width: 100% !important;}
   .productThumb .imgWrapper .wrapper{height: auto !important;}
+  /* .homeProducts .productRow{
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+  } */
 
   .progressBarBox {flex-direction: column;}
   .progressBarBox span.mr-3{display: block !important; width: 100%;}
