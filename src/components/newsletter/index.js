@@ -7,7 +7,7 @@ const Newsletter = () => {
     return (
         <div className='newsLetterBanner'>
             <SendOutlinedIcon />
-            <input type='text' placeholder='Your email address' />
+            <input type='text' placeholder='Email' />
             <Button className='bg-g'>Subscribe</Button>
         </div>
     )

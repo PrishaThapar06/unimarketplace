@@ -38,7 +38,7 @@ const HomeSlider = () => {
                                 Don’t miss amazing<br />
                                 grocery deals
                             </h2>
-                            <p>Sign up for the daily newsletter</p>
+                            {/* <p>Sign up for the daily newsletter</p> */}
                         </div>
                     </div>
                     <div className="item">
@@ -48,14 +48,14 @@ const HomeSlider = () => {
                                 Fresh Vegetables<br />
                                 Big discount
                             </h2>
-                            <p>Sign up for the daily newsletter</p>
+                            {/* <p>Sign up for the daily newsletter</p> */}
                         </div>
                     </div>
                 </Slider>
 
-                {
+                {/* {
                     context.windowWidth>992 && <Newsletter/>
-                }
+                } */}
                 
 
             </div>
