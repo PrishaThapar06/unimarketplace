@@ -18,7 +18,7 @@ import paymentImage from '../../assets/images/payment-method.png';
 import appStore from '../../assets/images/app-store.jpg';
 import googlePlay from '../../assets/images/google-play.jpg';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Newsletter from '../../components/newsletter/index';
@@ -127,10 +127,10 @@ const Footer = () => {
                                 <p>Awesome website to help students</p>
                                 <br />
 
-                                <p><LocationOnOutlinedIcon /> <strong>Address</strong>: 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
-                                <p><HeadphonesOutlinedIcon /> <strong>Call Us:</strong> (+91) - 540-025-124553 </p>
-                                <p><EmailOutlinedIcon /> <strong>Email:</strong> sale@Nest.com</p>
-                                <p><WatchLaterOutlinedIcon /> <strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                                <p><LocationOnOutlinedIcon /> <strong>Address</strong>: 5171 United Kingdom</p>
+                                <p><HeadphonesOutlinedIcon /> <strong>Call Us:</strong> (+91) - 7558406860 </p>
+                                <p><EmailOutlinedIcon /> <strong>Email:</strong> jainsiddhant214@gmail.com</p>
+                                {/* <p><WatchLaterOutlinedIcon /> <strong>Hours:</strong> 08:00 - 20:00, Mon - Fri</p> */}
 
                             </div>
 
@@ -145,8 +145,8 @@ const Footer = () => {
                                             <li><Link to="#">Privacy Policy</Link></li>
                                             <li><Link to="#">Terms &amp; Conditions</Link></li>
                                             <li><Link to="#">Contact Us</Link></li>
-                                            <li><Link to="#">Support Center</Link></li>
-                                            <li><Link to="#">Careers</Link></li>
+                                            {/* <li><Link to="#">Support Center</Link></li>
+                                            <li><Link to="#">Careers</Link></li> */}
                                         </ul>
                                     </div>
 
@@ -158,8 +158,8 @@ const Footer = () => {
                                             <li><Link to="#">Privacy Policy</Link></li>
                                             <li><Link to="#">Terms &amp; Conditions</Link></li>
                                             <li><Link to="#">Contact Us</Link></li>
-                                            <li><Link to="#">Support Center</Link></li>
-                                            <li><Link to="#">Careers</Link></li>
+                                            {/* <li><Link to="#">Support Center</Link></li>
+                                            <li><Link to="#">Careers</Link></li> */}
                                         </ul>
                                     </div>
 
@@ -172,8 +172,8 @@ const Footer = () => {
                                             <li><Link to="#">Privacy Policy</Link></li>
                                             <li><Link to="#">Terms &amp; Conditions</Link></li>
                                             <li><Link to="#">Contact Us</Link></li>
-                                            <li><Link to="#">Support Center</Link></li>
-                                            <li><Link to="#">Careers</Link></li>
+                                            {/* <li><Link to="#">Support Center</Link></li>
+                                            <li><Link to="#">Careers</Link></li> */}
                                         </ul>
                                     </div>
 
@@ -186,8 +186,8 @@ const Footer = () => {
                                             <li><Link to="#">Privacy Policy</Link></li>
                                             <li><Link to="#">Terms &amp; Conditions</Link></li>
                                             <li><Link to="#">Contact Us</Link></li>
-                                            <li><Link to="#">Support Center</Link></li>
-                                            <li><Link to="#">Careers</Link></li>
+                                            {/* <li><Link to="#">Support Center</Link></li>
+                                            <li><Link to="#">Careers</Link></li> */}
                                         </ul>
                                     </div>
                                 </div>
@@ -219,7 +219,7 @@ const Footer = () => {
 
                         <div className='row lastStrip'>
                             <div className='col-md-3 part_1'>
-                                <p>© 2022, Nest - HTML Ecommerce Template
+                                <p>© 2024, UniMarketPlace - React Ecommerce Website
                                     All rights reserved</p>
                             </div>
 
@@ -248,18 +248,18 @@ const Footer = () => {
                                 <div className='d-flex align-items-center'>
                                     <h5>Follow Us</h5>
                                     <ul className='list list-inline'>
-                                        <li className='list-inline-item'>
+                                        {/* <li className='list-inline-item'>
                                             <Link to={''}><FacebookOutlinedIcon /></Link>
+                                        </li> */}
+                                        <li className='list-inline-item'>
+                                            <Link to={'https://www.linkedin.com/company/findmyuni/'}><LinkedInIcon /></Link>
                                         </li>
                                         <li className='list-inline-item'>
-                                            <Link to={''}><TwitterIcon /></Link>
+                                            <Link to={'https://www.instagram.com/findmyuni.co/'}><InstagramIcon /></Link>
                                         </li>
-                                        <li className='list-inline-item'>
-                                            <Link to={''}><InstagramIcon /></Link>
-                                        </li>
-                                        <li className='list-inline-item'>
+                                        {/* <li className='list-inline-item'>
                                             <Link to={''}><YouTubeIcon /></Link>
-                                        </li>
+                                        </li> */}
 
                                     </ul>
                                 </div>
