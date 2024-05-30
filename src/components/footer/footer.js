@@ -21,7 +21,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Newsletter from '../../components/newsletter/index';
-import NewsletterImg from '../../assets/images/newsletter.png';
+import NewsletterImg from '../../assets/images/newletter.jpg';
 
 const Footer = () => {
     return (
@@ -37,9 +37,10 @@ const Footer = () => {
                             <Newsletter />
                         </div>
 
-                        <div className='img'>
-                            <img src={NewsletterImg} className='w-100' />
-                        </div>
+                        <div className='relative -mt-2 transition-all duration-200 ease-in-out h-auto'>
+    <img src={NewsletterImg} className='w-100 rounded-2xl' />
+</div>
+
                     </div>
                 </div>
             </section>
@@ -53,7 +54,7 @@ const Footer = () => {
                                     <span><img src={Icon1} /></span>
                                     <div className='info'>
                                         <h4>Best prices & offers</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +64,7 @@ const Footer = () => {
                                     <span><img src={Icon2} /></span>
                                     <div className='info'>
                                         <h4>Free delivery</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +74,7 @@ const Footer = () => {
                                     <span><img src={Icon3} /></span>
                                     <div className='info'>
                                         <h4>Great daily deal</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +85,7 @@ const Footer = () => {
                                     <span><img src={Icon4} /></span>
                                     <div className='info'>
                                         <h4>Wide assortment</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +96,7 @@ const Footer = () => {
                                     <span><img src={Icon5} /></span>
                                     <div className='info'>
                                         <h4>Easy returns</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>

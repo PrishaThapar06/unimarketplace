@@ -20,6 +20,7 @@ import Loader from './assets/images/loading.gif';
 
 import data from './data';
 
+
 const MyContext = createContext();
 
 function App() {
@@ -152,6 +153,7 @@ function App() {
           <Route exact={true} path="/signUp" element={<SignUp />} />
           <Route exact={true} path="/checkout" element={<Checkout />} />
           <Route exact={true} path="*" element={<NotFound />} />
+          <Route exact={true} path="/about" element={<About />} />
         </Routes>
        <Footer/>
       </MyContext.Provider>
