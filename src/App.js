@@ -128,7 +128,7 @@ function App() {
     setCartTotalAmount,
     cartTotalAmount,
     setCartItems,
-    cartItems
+    
   }
 
   return (

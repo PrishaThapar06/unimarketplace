@@ -32,11 +32,11 @@ const HomeSlider = () => {
             <div className='container-fluid position-relative'>
                 <Slider {...settings} className='home_slider_Main'>
                     <div className="item">
-                        <img src={Slide1} className='w-100' />
+                        <img src={Slide1} className='w-100'style={{ height: 'auto' }} />
                         <div className='info'>
                             <h2 class="mb-4">
                                 Don’t miss amazing<br />
-                                grocery deals
+                                deals on furniture
                             </h2>
                             {/* <p>Sign up for the daily newsletter</p> */}
                         </div>
@@ -45,7 +45,7 @@ const HomeSlider = () => {
                         <img src={Slide2} className='w-100' />
                         <div className='info'>
                             <h2 class="mb-3">
-                                Fresh Vegetables<br />
+                                New Furniture<br />
                                 Big discount
                             </h2>
                             {/* <p>Sign up for the daily newsletter</p> */}
