@@ -58,7 +58,7 @@ const Nav = (props) => {
                 }}
               >
                 <GridViewIcon /> &nbsp;UNI MARKET PLACE
-                <KeyboardArrowDownIcon />
+                {/* <KeyboardArrowDownIcon /> */}
               </Button>
               </Link>
             </div>
@@ -139,62 +139,43 @@ const Nav = (props) => {
                       );
                     })}
 
-                  {/* <li className="list-inline-item">
-                    <Button onClick={props.closeNav}>
-                      <Link>About</Link>
-                    </Button>
-                  </li> */}
+                                    <li className='list-inline-item'>
+                                        <Button onClick={props.closeNav}><Link to={'/about'}>About</Link></Button>
+                                    </li>
 
-                  <li className="list-inline-item position-static">
-                    <Button onClick={() => setOpenMegaMenu(!openMegaMenu)}>
-                      <Link>
-                        Shop{" "}
-                        <KeyboardArrowDownIcon
-                          className={`${openMegaMenu === true && "rotateIcon"}`}
-                        />
-                      </Link>
-                    </Button>
-                    <div
-                      className={`dropdown_menu megaMenu w-100 ${
-                        openMegaMenu === true && "open"
-                      }`}
-                    >
-                      <div className="row">
-                        {props.data.length !== 0 &&
-                          props.data.map((item, index) => {
-                            return (
-                              <div className="col">
-                                <a href={`/cat/${item.cat_name.toLowerCase()}`}>
-                                  {" "}
-                                  <h4 className="text-g text-capitalize">
-                                    {item.cat_name}
-                                  </h4>
-                                </a>
-                                {item.items.length !== 0 && (
-                                  <ul className="mt-4 mb-0">
-                                    {item.items.map((item_, index) => {
-                                      return (
-                                        <li>
-                                          <Link
-                                            onClick={props.closeNav}
-                                            to={`/cat/${item.cat_name.toLowerCase()}/${item_.cat_name
-                                              .replace(/\s/g, "-")
-                                              .toLowerCase()}`}
-                                          >
-                                            {item_.cat_name}
-                                          </Link>
-                                        </li>
-                                      );
-                                    })}
-                                  </ul>
-                                )}
-                              </div>
-                            );
-                          })}
+
+                                    <li className='list-inline-item position-static'>
+                                        <Button onClick={()=>setOpenMegaMenu(!openMegaMenu)}><Link>Shop <KeyboardArrowDownIcon   className={`${openMegaMenu===true &&  'rotateIcon'}`}/></Link></Button>
+                                        <div className={`dropdown_menu megaMenu w-100 ${openMegaMenu===true && 'open'}`}>
+                                            <div className='row'>
+                                                {
+                                                    props.data.length !== 0 &&
+                                                    props.data.map((item, index) => {
+                                                        return (
+                                                            <div className='col'>
+                                                                <a href={`/cat/${item.cat_name.toLowerCase()}`}> <h4 className='text-g text-capitalize'>{item.cat_name}</h4></a>
+                                                                {
+                                                                    item.items.length !== 0 &&
+                                                                    <ul className='mt-4 mb-0'>
+                                                                        {
+                                                                            item.items.map((item_, index) => {
+                                                                                return (
+                                                                                    <li>
+                                                                                        <Link onClick={props.closeNav} to={`/cat/${item.cat_name.toLowerCase()}/${item_.cat_name.replace(/\s/g, '-').toLowerCase()}`}>{item_.cat_name}</Link>
+                                                                                    </li>
+                                                                                )
+                                                                            })
+                                                                        }
+                                                                    </ul>
+                                                                }
+                                                            </div>
+                                                        )
+                                                    })
+                                                }
 
                         <div className="col">
                           <img
-                            src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-menu.png"
+                            src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/03/24185445/how-to-study-abroad.jpg"
                             className="w-100"
                           />
                         </div>
@@ -234,7 +215,7 @@ const Nav = (props) => {
                   </li>
                   <li className="list-inline-item">
                     <Button>
-                      <Link>Contact</Link>
+                      <Link to={'/contactus'}>Contact</Link>
                     </Button>
                   </li>
                 </ul>

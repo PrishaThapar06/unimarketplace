@@ -22,7 +22,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Newsletter from '../../components/newsletter/index';
-import NewsletterImg from '../../assets/images/newsletter.png';
+import NewsletterImg from '../../assets/images/newletter.jpg';
+import { Height } from '@mui/icons-material';
 
 const Footer = () => {
     return (
@@ -33,14 +34,16 @@ const Footer = () => {
                     <div className='box d-flex align-items-center'>
                         <div className='info'>
                             <h2>Stay home & get your daily <br />needs from our shop</h2>
-                            <p>Start You'r Daily Shopping with Nest Mart</p>
+                            <p>Start You'r Daily Shopping with UniMarketPlace</p>
                             <br /><br className='res-hide' />
                             <Newsletter />
                         </div>
 
-                        <div className='img'>
-                            <img src={NewsletterImg} className='w-100' />
+                        <div className='hidden md:block' style={{paddingLeft:250}} >
+                            <img src={NewsletterImg} width={600} height={600}/>
                         </div>
+
+
                     </div>
                 </div>
             </section>
@@ -54,7 +57,7 @@ const Footer = () => {
                                     <span><img src={Icon1} /></span>
                                     <div className='info'>
                                         <h4>Best prices & offers</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +67,7 @@ const Footer = () => {
                                     <span><img src={Icon2} /></span>
                                     <div className='info'>
                                         <h4>Free delivery</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +77,7 @@ const Footer = () => {
                                     <span><img src={Icon3} /></span>
                                     <div className='info'>
                                         <h4>Great daily deal</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +88,7 @@ const Footer = () => {
                                     <span><img src={Icon4} /></span>
                                     <div className='info'>
                                         <h4>Wide assortment</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +99,7 @@ const Footer = () => {
                                     <span><img src={Icon5} /></span>
                                     <div className='info'>
                                         <h4>Easy returns</h4>
-                                        <p>Orders $50 or more</p>
+                                        <p>Orders £50 or more</p>
                                     </div>
                                 </div>
                             </div>

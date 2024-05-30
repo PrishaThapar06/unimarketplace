@@ -50,20 +50,15 @@ const Header = (props) => {
     }, [context.cartItems])
 
     const [categories, setcategories] = useState([
-        'Milks and Dairies',
-        'Wines & Drinks',
-        'Clothing & beauty',
-        'Fresh Seafood',
-        'Pet Foods & Toy',
-        'Fast food',
-        'Baking material',
-        'Vegetables',
-        'Fresh Fruit',
-        'Bread and Juice',
-        'Milks and Dairies',
-        'Wines & Drinks',
-        'Clothing & beauty',
-        'Fresh Seafood'
+        'Living Room',
+        'Bedroom',
+        'Kitchen',
+        'Storage',
+        'Mobile & Tablets',
+        'TV & Speaker',
+        'Men Western Wear',
+        'Women Western Wear'
+
     ]);
 
 

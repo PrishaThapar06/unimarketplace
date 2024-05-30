@@ -17,8 +17,9 @@ import Cart from './pages/cart';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Loader from './assets/images/loading.gif';
-
+import Contactus from './pages/ContactUs';
 import data from './data';
+
 
 const MyContext = createContext();
 
@@ -152,6 +153,8 @@ function App() {
           <Route exact={true} path="/signUp" element={<SignUp />} />
           <Route exact={true} path="/checkout" element={<Checkout />} />
           <Route exact={true} path="*" element={<NotFound />} />
+          <Route exact={true} path="/about" element={<About />} />
+          <Route exact={true} path="/contactus" element={<Contactus />} />
         </Routes>
        <Footer/>
       </MyContext.Provider>
