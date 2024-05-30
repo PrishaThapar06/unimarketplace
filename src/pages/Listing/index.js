@@ -11,7 +11,7 @@ import { MyContext } from '../../App';
 const Listing = (props) => {
     const [isOpenDropDown, setisOpenDropDown] = useState(false);
     const [isOpenDropDown2, setisOpenDropDown2] = useState(false);
-    const [showPerPage, setHhowPerPage] = useState(3);
+    const [showPerPage, setShowPerPage] = useState(3);
 
     const [data, setData] = useState([]);
 
@@ -313,7 +313,7 @@ const Listing = (props) => {
                                                         <Button className='align-items-center'
                                                             onClick={() => {
                                                                 setisOpenDropDown(false)
-                                                                setHhowPerPage(1);
+                                                                setShowPerPage(1);
                                                             }}
                                                         >
                                                             5
@@ -323,7 +323,7 @@ const Listing = (props) => {
                                                         <Button className='align-items-center'
                                                             onClick={() => {
                                                                 setisOpenDropDown(false)
-                                                                setHhowPerPage(2);
+                                                                setShowPerPage(2);
                                                             }}
                                                         >
                                                             10
@@ -334,7 +334,7 @@ const Listing = (props) => {
                                                         <Button className='align-items-center'
                                                             onClick={() => {
                                                                 setisOpenDropDown(false)
-                                                                setHhowPerPage(3);
+                                                                setShowPerPage(3);
                                                             }}
                                                         >
                                                             15
@@ -345,7 +345,7 @@ const Listing = (props) => {
                                                         <Button className='align-items-center'
                                                             onClick={() => {
                                                                 setisOpenDropDown(false)
-                                                                setHhowPerPage(4);
+                                                                setShowPerPage(4);
                                                             }}
                                                         >
                                                             20

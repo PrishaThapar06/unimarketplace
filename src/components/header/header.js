@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../header/header.css';
-import Logo from '../../assets/images/logo.svg';
+import { FaArrowLeft } from "react-icons/fa6";
 import SearchIcon from '@mui/icons-material/Search';
 import Select from '../selectDrop/select';
 import axios from 'axios';
@@ -138,7 +138,36 @@ const Header = (props) => {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-sm-2 part1 d-flex align-items-center'>
-                                <Link to="/"><img src={Logo} className='logo' /></Link>
+                                <span>
+                                <Link to="https://www.findmyuni.co.in/">
+                                <button type="button"               style={{
+                color: 'white',
+                background: 'linear-gradient(to right, #38b2ac, #63b3ed)', // Tailwind's from-green-500 to-blue-400
+                outline: 'none',
+                boxShadow: '0 0 0 4px rgba(0, 0, 0, 0.1)', // Equivalent of focus:ring-4
+                fontWeight: '500', // Equivalent of font-medium
+                borderRadius: '9999px', // Equivalent of rounded-full
+                fontSize: '1.125rem', // Equivalent of text-lg
+                padding: '0.625rem 1.25rem', // Equivalent of px-5 py-2.5
+                textAlign: 'center',
+                marginRight: '0.5rem', // Equivalent of me-2
+                marginBottom: '0.5rem', // Equivalent of mb-2
+                display: 'flex',
+                alignItems: 'center',
+                borderColor: 'black',
+                borderWidth: '2px',
+                borderStyle: 'solid',
+              }}
+>
+                                        <div className='my-auto'>
+                                        <FaArrowLeft />
+                                        </div>
+                                        <div>
+                                            Back to FindMyUni
+                                        </div>
+                                    </button>
+                                </Link>
+                                </span>
                                 {
                                     windowWidth < 992 &&
                                     <div className='ml-auto d-flex align-items-center'>
@@ -204,13 +233,13 @@ const Header = (props) => {
                                     </div>
                                     <ClickAwayListener onClickAway={() => setisOpenDropDown(false)}>
                                         <ul className='list list-inline mb-0 headerTabs'>
-                                            <li className='list-inline-item'>
+                                            {/* <li className='list-inline-item'>
                                                 <span>
                                                     <img src={IconCompare} />
                                                     <span className='badge bg-success rounded-circle'>3</span>
                                                     Compare
                                                 </span>
-                                            </li>
+                                            </li> */}
                                             <li className='list-inline-item'>
                                                 <span>
                                                     <img src={IconHeart} />
