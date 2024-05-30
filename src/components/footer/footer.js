@@ -124,7 +124,7 @@ const Footer = () => {
   </Button>
 </Link>
                                 <br /><br />
-                                <p>Awesome grocery store website template</p>
+                                <p>Awesome website to help students</p>
                                 <br />
 
                                 <p><LocationOnOutlinedIcon /> <strong>Address</strong>: 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>

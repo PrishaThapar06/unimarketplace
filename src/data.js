@@ -1,818 +1,560 @@
 const data = {
     "productData": [
       {
-        "cat_name": "groceries",
+        "cat_name": "furniture",
         "id": 1,
-        "image": "https://cdn-icons-png.flaticon.com/512/3724/3724788.png",
+        "image": "https://png.pngtree.com/png-vector/20220105/ourlarge/pngtree-design-cartoon-vector-furniture-5-png-image_4081024.png",
         "items": [
           {
-            "cat_name": "dals and pulses",
+            "cat_name": "Living Room",
             "products": [
               {
-                "productName": "Good Life Whole Moong 500 g",
-                "price": "20",
-                "oldPrice": "140",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-0-202308311426.jpg",
-                "discount": "12",
-                "brand": "AASHIRVAAD",
+                "productName": "Comfortable Loveseat Sofa",
+                "price": "200",
+                "oldPrice": "250",
+                "dimensions": {
+                  "width": 180,
+                  "height": 78,
+                  "depth": 88
+                },
+                "catImg":"https://i5.walmartimages.com/seo/INGALIK-88-58-Modern-Loveseat-Sofa-Living-Room-Chenille-Couch-Square-Armrests-Removable-Cushions-Detachable-Cover-Easy-Install-3-Seater-Beige_453faadf-fe8f-4869-bdd7-6737d5292aa8.fc4478e493a9e7daae38d546acc2720c.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+                "discount": "20",
+                "brand": "Ikea",  
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-0-202308311426.jpg",
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-1-202308311426.jpg",
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-2-202308311426.jpg",
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-3-202308311426.jpg",
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-product-images-o491187309-p491187309-4-202308311426.jpg",
-                  "https://www.jiomart.com/images/product/original/491187309/good-life-whole-moong-500-g-legal-images-o491187309-p491187309-5-202308311427.jpg"
+                  "https://i5.walmartimages.com/seo/INGALIK-88-58-Modern-Loveseat-Sofa-Living-Room-Chenille-Couch-Square-Armrests-Removable-Cushions-Detachable-Cover-Easy-Install-3-Seater-Beige_453faadf-fe8f-4869-bdd7-6737d5292aa8.fc4478e493a9e7daae38d546acc2720c.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF", 
+                  "https://i5.walmartimages.com/asr/c904869b-c562-4a4c-9b99-b5b51cd783bb.27dac34958a1f1e3a5f4eb6a61379b87.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF" 
                 ],
-                "rating": 3.5,
-                "description": "Good Life Whole Moong is one of the light meal to digest. It is often given to people who prefer diet for fitness. It contains antioxidants which are very healthy for the good functioning of the human body. It can be included in our daily diet as it can fulfil the nutritional and dietary requirements of an entire meal. Buy Good Life Whole Moong online now!",
+                "rating": 4.2,
+                "description": "This comfortable and stylish loveseat sofa is perfect for any living room. It's compact, affordable, and easy to assemble. The removable cover makes cleaning a breeze. Great for relaxing, studying, or entertaining friends.",
                 "id": 1
-              },
+              }
+              ,
               {
-                "productName": "Moong Dal 2 kg",
-                "price": "246",
-                "oldPrice": "320",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491432711/moong-dal-2-kg-product-images-o491432711-p491432711-0-202205191636.jpg",
-                "discount": "16",
-                "brand": "Private Label",
+                "productName": "Coffee Table",
+                "price": "75",
+                "oldPrice": "100",
+                "dimensions": {
+                  "width": 100,
+                  "height": 45,
+                  "depth": 60
+                },
+                "catImg": "https://i.ebayimg.com/images/g/h14AAOSwjQ1lksmj/s-l960.webp",
+                "discount": "25",
+                "brand": "John Lewis & Partners",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491432711/moong-dal-2-kg-product-images-o491432711-p491432711-0-202205191636.jpg",
-                  "https://www.jiomart.com/images/product/original/491432711/moong-dal-2-kg-product-images-o491432711-p491432711-1-202205191636.jpg",
-                  "https://www.jiomart.com/images/product/original/491432711/moong-dal-2-kg-legal-images-o491432711-p491432711-3-202205191636.jpg"
+                  "https://i.ebayimg.com/images/g/h14AAOSwjQ1lksmj/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/-1UAAOSwLsZlksmq/s-l960.webp"
                 ],
-                "rating": 4,
-                "description": "Moong Dal is essentially packed with loads of nutrients that are extremely beneficial for your health. Moong contains almost every important element that your body might need. Buy Moong Dal online today.",
+                "rating": 4.7,
+                "description": "The Coffee Table features a sleek, modern design with a glass top and metal frame. It's the perfect centerpiece for your living room, offering both style and functionality for studying or entertaining.",
                 "id": 2
               },
               {
-                "productName": "Good Life Raw Peanuts 500 g",
-                "price": "89",
-                "oldPrice": "150",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-0-202306102242.jpg",
-                "discount": "16",
-                "brand": "Good Life",
+                "productName": "Recliner Sofa",
+                "price": "90",
+                "oldPrice": "120",
+                "dimensions": {
+                  "width": 120,
+                  "height": 50,
+                  "depth": 40
+                },
+                "catImg": "https://i.ebayimg.com/images/g/S1sAAOSw5i1mJirp/s-l960.webp",
+                "discount": "25",
+                "brand": "Argos Home",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-0-202306102242.jpg",
-                  "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-2-202306102242.jpg",
-                  "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-3-202306102243.jpg",
-                  "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-4-202306102243.jpg",
-                  "https://www.jiomart.com/images/product/original/491278616/good-life-raw-peanuts-500-g-product-images-o491278616-p491278616-5-202306102243.jpg"
+                  "https://i.ebayimg.com/images/g/kCcAAOSw29FmJirr/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/S1sAAOSw5i1mJirp/s-l960.webp"
                 ],
-                "rating": 3.5,
-                "description": "Good Life Raw Peanuts is a healthy snack and the right choice for you. You can easily roast them at home. They are loaded with the goodness of health and taste. Peanut butter made with Peanuts clearly works well in sweet dishes, like cookies and brownies, which is why it pairs well with other sweeter foods like sweet potato. Buy Good Life Raw Peanuts online now!",
+                "rating": 4.5,
+                "description": 
+
+                "Enjoy comfort and style with our blue colored recliner sofa. Perfect for lounging and relaxation, this sofa combines plush cushioning with a sleek design, making it an ideal addition to any modern living space.",
                 "id": 3
               },
-              {
-                "productName": "Tata Sampann Unpolished Chilka Moong 500 g",
-                "price": "74",
-                "oldPrice": "95",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-product-images-o490830947-p490830947-0-202203150526.jpg",
-                "discount": "18",
-                "brand": "Tata Sampann",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-product-images-o490830947-p490830947-0-202203150526.jpg",
-                  "https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-product-images-o490830947-p490830947-1-202203150526.jpg",
-                  "https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-legal-images-o490830947-p490830947-2-202203150526.jpg",
-                  "https://www.jiomart.com/images/product/original/490830947/tata-sampann-high-protein-unpolished-chilka-moong-500-g-legal-images-o490830947-p490830947-5-202203150526.jpg"
-                ],
-                "rating": 4,
-                "description": "Moong Dal is procured from reliable and high-quality sources. The beans are best consumed after being sprouted. Dosa with the whole moong also turns out to be yummy, another exotic way to eat moong is to eat it as a korma which is spiced up with tangy tomatoes and a cashew paste. It is mainly used as the base for curries such as sambar, dal, etc. Buy Tata Sampann Unpolished Chilka Moong online now!",
-                "id": 4
-              },
-              {
-                "productName": "Good Life Moong Dal 1 kg",
-                "price": "145",
-                "oldPrice": "189",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491187257/good-life-moong-dal-1-kg-product-images-o491187257-p491187257-0-202301171616.jpg",
-                "discount": "12",
-                "brand": "Good Life",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491187257/good-life-moong-dal-1-kg-product-images-o491187257-p491187257-0-202301171616.jpg",
-                  "https://www.jiomart.com/images/product/original/491187257/good-life-moong-dal-1-kg-product-images-o491187257-p491187257-1-202301171616.jpg",
-                  "https://www.jiomart.com/images/product/original/491187257/good-life-moong-dal-1-kg-legal-images-o491187257-p491187257-2-202301171616.jpg"
-                ],
-                "rating": 4.5,
-                "description": "Good life Moong Dal is procured from reliable and high-quality sources. The beans are best consumed after being sprouted. Dosa with whole moong also turns out to be yummy, another exotic way to eat moong is to eat it as a korma which is spiced up with tangy tomatoes and a cashew paste. It is mainly used as the base for curries such as sambar, dal etc. Buy Good Life Moong Dal online now!",
-                "id": 5
-              },
-              {
-                "productName": "Good Life Kabuli Chana 1 kg",
-                "price": "185",
-                "oldPrice": "210",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491187282/good-life-kabuli-chana-1-kg-product-images-o491187282-p491187282-0-202301171615.jpg",
-                "discount": "23",
-                "brand": "Good Life",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491187282/good-life-kabuli-chana-1-kg-product-images-o491187282-p491187282-0-202301171615.jpg",
-                  "https://www.jiomart.com/images/product/original/491187282/good-life-kabuli-chana-1-kg-product-images-o491187282-p491187282-1-202301171615.jpg",
-                  "https://www.jiomart.com/images/product/original/491187282/good-life-kabuli-chana-1-kg-legal-images-o491187282-p491187282-4-202301171615.jpg"
-                ],
-                "rating": 3.5,
-                "description": "Kabuli Chana is rich in proteins, dietary fibre and low in cholesterol and saturated fat. The beans can be soaked in water and cooked along with vegetables in the preparation of a variety of curries that complement well with rice, roti, chapattis, puri, kulcha as well as bread. It can be sprouted after soaking in water for 24 hours and added to salads to enrich the latter with proteins. Buy Good Life Kabuli Chana online now!",
-                "id": 6
-              },
-              {
-                "productName": "Angur Oily Toor Dal 5Kg",
-                "price": "999",
-                "oldPrice": "1100",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-0-202306071944.jpg",
-                "discount": "16",
-                "brand": "Angur",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-0-202306071944.jpg",
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-1-202306071944.jpg",
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-2-202306071944.jpg",
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-3-202306071944.jpg",
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-product-images-orv8axdxoiw-p602216568-4-202306071944.jpg",
-                  "https://www.jiomart.com/images/product/original/rv8axdxoiw/angur-oily-toor-dal-5kg-legal-images-orv8axdxoiw-p602216568-5-202306071944.png"
-                ],
-                "rating": 5,
-                "description": "ANGUR TOOR DAL: Toor Dal (split yellow peas) is a mainstay of Indian cuisine. Related to lentils (pulses) and rich in natural nutrients, these delicious legumes are an excellent source of protein, minerals, and B vitamins.ADDS FLAVORFUL PROTEIN: Split yellow peas are an excellent, flavorful protein alternative for any meal. Use as a base or add Toor Dals to your favorite Indian dishes, including curries, soups, stews, salads, and more!",
-                "id": 7
-              },
-              {
-                "productName": "Fortune Soya Wadi / Chunks 1 kg",
-                "price": "139",
-                "oldPrice": "152",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491161236/fortune-soya-wadi-chunks-1-kg-product-images-o491161236-p491161236-0-202303181437.jpg",
-                "discount": "15",
-                "brand": "Fortune",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491161236/fortune-soya-wadi-chunks-1-kg-product-images-o491161236-p491161236-0-202303181437.jpg",
-                  "https://www.jiomart.com/images/product/original/491161236/fortune-soya-wadi-chunks-1-kg-product-images-o491161236-p491161236-1-202303181437.jpg",
-                  "https://www.jiomart.com/images/product/original/491161236/fortune-soya-wadi-chunks-1-kg-legal-images-o491161236-p491161236-4-202303181437.jpg"
-                ],
-                "rating": 4.5,
-                "description": "Fortune Soya Wadi / Chunks are light, soft and easy on your stomach. Does your family need champion wala dum aur yum? From biryanis to pulao and even Chinese fried rice, cooked soya chunks can be added to numerous rice dishes. Fortune Soya Chunk - ''Yum jo de champion ko dum'', so buy Fortune Soya Wadi / Chunks online now!",
-                "id": 8
-              }
+              // {
+              //   "productName": "Dunelm Large Bean Bag Chair",
+              //   "price": "40",
+              //   "oldPrice": "55",
+              //   "dimensions": {
+              //     "width": 90,
+              //     "height": 90,
+              //     "depth": 90
+              //   },
+              //   "catImg": "https://media.dunelm.com/productimages/1000162493_M.jpg",
+              //   "discount": "27",
+              //   "brand": "Dunelm",
+              //   "productImages": [
+              //     "https://media.dunelm.com/productimages/1000162493_M.jpg",
+              //     "https://media.dunelm.com/productimages/1000162493_A.jpg"
+              //   ],
+              //   "rating": 4.3,
+              //   "description": "The Dunelm Large Bean Bag Chair is a comfortable and versatile seating option for your living room. It’s lightweight and easy to move around, making it perfect for relaxing or studying in comfort.",
+              //   "id": 4
+              // },
+              // {
+              //   "productName": "Habitat Drew Nest of Tables",
+              //   "price": "50",
+              //   "oldPrice": "70",
+              //   "dimensions": {
+              //     "width": 55,
+              //     "height": 45,
+              //     "depth": 35
+              //   },
+              //   "catImg": "https://media.4rgos.it/i/Argos/6069661_R_Z001A?w=750&h=440&qlt=70&fmt=webp",
+              //   "discount": "28",
+              //   "brand": "Habitat",
+              //   "productImages": [
+              //     "https://media.4rgos.it/i/Argos/6069661_R_Z001A?w=750&h=440&qlt=70&fmt=webp",
+              //     "https://media.4rgos.it/i/Argos/6069661_R_Z001B?w=750&h=440&qlt=70&fmt=webp"
+              //   ],
+              //   "rating": 4.6,
+              //   "description": "The Habitat Drew Nest of Tables are practical and stylish. These space-saving tables can be used individually or nested together, perfect for small living rooms or student accommodation.",
+              //   "id": 5
+              // },
+              // {
+              //   "productName": "Amazon Basics Classic Armchair",
+              //   "price": "110",
+              //   "oldPrice": "150",
+              //   "dimensions": {
+              //     "width": 75,
+              //     "height": 85,
+              //     "depth": 85
+              //   },
+              //   "catImg": "https://images-na.ssl-images-amazon.com/images/I/71iGIr9-2-L._AC_SL1500_.jpg",
+              //   "discount": "27",
+              //   "brand": "Amazon Basics",
+              //   "productImages": [
+              //     "https://images-na.ssl-images-amazon.com/images/I/71iGIr9-2-L._AC_SL1500_.jpg",
+              //     "https://images-na.ssl-images-amazon.com/images/I/81NcU4AlR7L._AC_SL1500_.jpg"
+              //   ],
+              //   "rating": 4.4,
+              //   "description": "The Amazon Basics Classic Armchair offers a blend of comfort and style, perfect for any living room. Its cushioned seat and back provide support, making it ideal for studying, reading, or relaxing.",
+              //   "id": 6
+              // },
+              // {
+              //   "productName": "Made.com Jonah 3 Seater Sofa",
+              //   "price": "400",
+              //   "oldPrice": "500",
+              //   "dimensions": {
+              //     "width": 215,
+              //     "height": 85,
+              //     "depth": 95
+              //   },
+              //   "catImg": "https://media.made.com/jonah-3-seater-sofa",
+              //   "discount": "20",
+              //   "brand": "Made.com",
+              //   "productImages": [
+              //     "https://media.made.com/jonah-3-seater-sofa",
+              //     "https://media.made.com/jonah-3-seater-sofa"
+              //   ],
+              //   "rating": 4.9,
+              //   "description": "The Made.com Jonah 3 Seater Sofa combines elegance with comfort, featuring a modern design and plush cushions. Perfect for student living rooms, it provides ample seating for friends and family.",
+              //   "id": 7
+              // }
             ]
           },
           {
-            "cat_name": "Ghee & Oils",
+            "cat_name": "Bedroom",
             "products": [
               {
-                "productName": "Gowardhan Pure Cow Ghee 1 L (Jar)",
+                "productName": "Deep Pocket 6 Piece Bed Sheet Set 1800 Series Microfiber Comfort Paisley Sheets",
                 "price": "676",
                 "oldPrice": "820",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490489040/gowardhan-pure-cow-ghee-1-l-jar-product-images-o490489040-p490489040-0-202203170210.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/8vgAAOSwCGhmUJRL/s-l960.webp",
                 "discount": "18",
-                "brand": "Gowardhan",
+                "brand": "Argos Home",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/490489040/gowardhan-pure-cow-ghee-1-l-jar-product-images-o490489040-p490489040-0-202203170210.jpg",
-                  "https://www.jiomart.com/images/product/original/490489040/gowardhan-pure-cow-ghee-1-l-jar-product-images-o490489040-p490489040-1-202203170210.jpg",
-                  "https://www.jiomart.com/images/product/original/490489040/gowardhan-pure-cow-ghee-1-l-jar-product-images-o490489040-p490489040-2-202203170210.jpg",
-                  "https://www.jiomart.com/images/product/original/490489040/gowardhan-pure-cow-ghee-1-l-jar-legal-images-o490489040-p490489040-5-202203170210.jpg"
+                  "https://i.ebayimg.com/images/g/8vgAAOSwCGhmUJRL/s-l960.webp"
                 ],
                 "rating": 5,
-                "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Gowardhan Pure Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today!",
+                "description": "Enhance your bedroom with the luxurious Deep Pocket 6 Piece Bed Sheet Set. Made from 1800 series microfiber, these paisley sheets are incredibly soft and comfortable. The deep pockets ensure a snug fit on mattresses up to 16 inches deep. This set includes a flat sheet, fitted sheet, and four pillowcases, providing a complete bedding solution. Transform your bedroom into a cozy retreat with these stylish and durable sheets!",
                 "id": 9
               },
               {
-                "productName": "Nestle EveryDay Ghee 1 L (Carton)",
-                "price": "579",
-                "oldPrice": "620",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-0-202203141958.jpg",
-                "discount": "16",
-                "brand": "Nestle",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-0-202203141958.jpg",
-                  "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-1-202203141958.jpg",
-                  "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-2-202203141958.jpg",
-                  "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-3-202203141958.jpg",
-                  "https://www.jiomart.com/images/product/original/490440207/nestle-everyday-ghee-1-l-carton-product-images-o490440207-p490440207-4-202203141958.jpg"
-                ],
-                "rating": 4.5,
-                "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Nestle EveryDay Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today!",
-                "id": 10
-              },
-              {
-                "productName": "Amul Cow Ghee 1 L (Pouch)",
+                "productName": "organic cotton duvet cover Full/queen. New",
                 "price": "250",
                 "oldPrice": "300",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491135471/amul-cow-ghee-1-l-pouch-product-images-o491135471-p491135471-0-202203170918.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/stoAAOSwJq1mUS3Q/s-l960.webp",
                 "discount": "10",
-                "brand": "Amul",
+                "brand": "Parachute",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491135471/amul-cow-ghee-1-l-pouch-product-images-o491135471-p491135471-0-202203170918.jpg",
-                  "https://www.jiomart.com/images/product/original/491135471/amul-cow-ghee-1-l-pouch-product-images-o491135471-p491135471-1-202203170918.jpg",
-                  "https://www.jiomart.com/images/product/original/491135471/amul-cow-ghee-1-l-pouch-legal-images-o491135471-p491135471-2-202203170918.jpg"
-                ],
-                "rating": 0,
-                "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Amul Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today!",
-                "id": 11
-              },
-              {
-                "productName": "Amul Cow Ghee 500 ml (Pouch)",
-                "price": "300",
-                "oldPrice": "380",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-0-202203150541.jpg",
-                "discount": "8",
-                "brand": "Amul",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-0-202203150541.jpg",
-                  "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-1-202203150541.jpg"
-                ],
-                "rating": 0,
-                "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Amul Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today!",
-                "id": 12
-              },
-              {
-                "productName": "HARYANA FRESH Rich Desi Danedar Ghee 500 Grams (Carton)",
-                "price": "249",
-                "oldPrice": "280",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-0-202308302043.jpg",
-                "discount": "18",
-                "brand": "HARYANA FRESH",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-0-202308302043.jpg",
-                  "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-1-202308302043.jpg",
-                  "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-legal-images-orvtancavef-p604251677-2-202308302043.jpg"
+                  "https://i.ebayimg.com/images/g/stoAAOSwJq1mUS3Q/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/JBkAAOSw~dtmUS3R/s-l960.webp",
+                  
                 ],
                 "rating": 4,
-                "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Amul Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today",
-                "id": 13
+                "description": "A brand-new, unused, and unworn item (including handmade items) in the original packaging (such as the original box or bag) and/or with the original tags attached.",
+                "id": 10
               },
-              {
-                "productName": "Kheduthaat Shudh Ghee Vedic Method Traditional Suddha Ghee 1 LTR ml",
-                "price": "699",
-                "oldPrice": "780",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-0-202308291243.jpg",
-                "discount": "14",
-                "brand": "KHEDUT HAAT",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-0-202308291243.jpg",
-                  "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-1-202308291243.jpg",
-                  "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-legal-images-orv6qd7bcjt-p604175636-3-202308291243.jpg"
-                ],
-                "rating": 4,
-                "description": "Khedut haat provides you with the pure cow ghee from the milk . Our ghee provides you with all the nutrients needed and only in the vessels made with Soil (Mitti) has taken an initiative for farmers to keep their strength which is a cow. All our products are directly or indirectly related to Cows & Buffalows. this milk to make milk-made dairy products. Cow dung and cow urine for fertilizing the soil. We do not use chemical fertilizers ",
-                "id": 14
-              }
+              // {
+              //   "productName": "organic cotton duvet cover Full/queen. New",
+              //   "price": "250",
+              //   "oldPrice": "300",
+                
+              //   "catImg": "https://i.ebayimg.com/images/g/stoAAOSwJq1mUS3Q/s-l960.webp",
+              //   "discount": "10",
+              //   "brand": "Parachute",
+              //   "productImages": [
+              //     "https://i.ebayimg.com/images/g/stoAAOSwJq1mUS3Q/s-l960.webp",
+              //     "https://i.ebayimg.com/images/g/JBkAAOSw~dtmUS3R/s-l960.webp",
+                  
+              //   ],
+              //   "rating": 4,
+              //   "description": "A brand-new, unused, and unworn item (including handmade items) in the original packaging (such as the original box or bag) and/or with the original tags attached.",
+              //   "id": 11
+              // },
+              // {
+              //   "productName": "Amul Cow Ghee 500 ml (Pouch)",
+              //   "price": "300",
+              //   "oldPrice": "380",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-0-202203150541.jpg",
+              //   "discount": "8",
+              //   "brand": "Amul",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-0-202203150541.jpg",
+              //     "https://www.jiomart.com/images/product/original/490011305/amul-cow-ghee-500-ml-pouch-product-images-o490011305-p490011305-1-202203150541.jpg"
+              //   ],
+              //   "rating": 0,
+              //   "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Amul Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today!",
+              //   "id": 12
+              // },
+              // {
+              //   "productName": "HARYANA FRESH Rich Desi Danedar Ghee 500 Grams (Carton)",
+              //   "price": "249",
+              //   "oldPrice": "280",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-0-202308302043.jpg",
+              //   "discount": "18",
+              //   "brand": "HARYANA FRESH",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-0-202308302043.jpg",
+              //     "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-product-images-orvtancavef-p604251677-1-202308302043.jpg",
+              //     "https://www.jiomart.com/images/product/original/rvtancavef/haryana-fresh-rich-desi-danedar-ghee-500-grams-carton-legal-images-orvtancavef-p604251677-2-202308302043.jpg"
+              //   ],
+              //   "rating": 4,
+              //   "description": "Ghee is a class of clarified butter that originated in ancient India. It is commonly used in Indian cooking. Amul Cow Ghee can be swapped for vegetable oil or coconut oil in baked goods or can be used for deep-frying. Or simply melt it and spread it on roti, or pour it on vegetables/dal before serving. So go ahead and buy this product online today",
+              //   "id": 13
+              // },
+              // {
+              //   "productName": "Kheduthaat Shudh Ghee Vedic Method Traditional Suddha Ghee 1 LTR ml",
+              //   "price": "699",
+              //   "oldPrice": "780",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-0-202308291243.jpg",
+              //   "discount": "14",
+              //   "brand": "KHEDUT HAAT",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-0-202308291243.jpg",
+              //     "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-product-images-orv6qd7bcjt-p604175636-1-202308291243.jpg",
+              //     "https://www.jiomart.com/images/product/original/rv6qd7bcjt/kheduthaat-shudh-ghee-vedic-method-traditional-suddha-ghee-1-ltr-ml-legal-images-orv6qd7bcjt-p604175636-3-202308291243.jpg"
+              //   ],
+              //   "rating": 4,
+              //   "description": "Khedut haat provides you with the pure cow ghee from the milk . Our ghee provides you with all the nutrients needed and only in the vessels made with Soil (Mitti) has taken an initiative for farmers to keep their strength which is a cow. All our products are directly or indirectly related to Cows & Buffalows. this milk to make milk-made dairy products. Cow dung and cow urine for fertilizing the soil. We do not use chemical fertilizers ",
+              //   "id": 14
+              // }
             ]
           },
           {
-            "cat_name": "Atta & Flours",
+            "cat_name": "Kitchen",
             "products": [
               {
-                "productName": "Aashirvaad Superior MP Whole Wheat Atta 1 kg",
+                "productName": "Instant Read Digital Meat Thermometer BBQ Grill Smoker For Kitchen Food Cooking",
                 "price": "320",
                 "oldPrice": "380",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-product-images-o490750659-p590150646-0-202203150622.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/wNYAAOSwowtbj56R/s-l960.webp",
                 "discount": "13",
-                "brand": "Aashirvaad",
+                "brand": "Unbranded",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-product-images-o490750659-p590150646-0-202203150622.jpg",
-                  "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-product-images-o490750659-p590150646-1-202203150622.jpg",
-                  "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-legal-images-o490750659-p590150646-2-202203150622.jpg",
-                  "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-legal-images-o490750659-p590150646-3-202203150622.jpg",
-                  "https://www.jiomart.com/images/product/original/490750659/aashirvaad-superior-mp-whole-wheat-atta-1-kg-legal-images-o490750659-p590150646-4-202203150622.jpg"
+                  "https://i.ebayimg.com/images/g/wNYAAOSwowtbj56R/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/V5kAAOSwPEFbj56I/s-l960.webp",
+                  
                 ],
-                "rating": 5,
-                "description": "Aashirvaad Superior MP Whole Wheat Atta provides goodness of taste in every bite. Also, it has a sweet and aromatic taste that works together to give you fuller and softer rotis, every single time. Buy Aashirvaad Superior MP Whole Wheat Atta online now!",
+                "rating": 4.3,
+                "description": "New: A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item is handmade or was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details.",
                 "id": 15
               },
               {
-                "productName": "Aashirvaad Select Sharbati Whole Wheat Atta 1 kg",
+                "productName": "IKEA Fintorp Rail Holder Kitchen Office 22.5” 18481 Black 502.019.06",
                 "price": "350",
                 "oldPrice": "380",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490007352/aashirvaad-select-sharbati-whole-wheat-atta-1-kg-product-images-o490007352-p490007352-0-202206241206.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/5DUAAOSw3dhmVfrL/s-l960.webp",
                 "discount": "17",
-                "brand": "Aashirvaad",
+                "brand": "IKEA",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/490007352/aashirvaad-select-sharbati-whole-wheat-atta-1-kg-product-images-o490007352-p490007352-0-202206241206.jpg",
-                  "https://www.jiomart.com/images/product/original/490007352/aashirvaad-select-sharbati-whole-wheat-atta-1-kg-product-images-o490007352-p490007352-1-202206241206.jpg",
-                  "https://www.jiomart.com/images/product/original/490007352/aashirvaad-select-sharbati-whole-wheat-atta-1-kg-legal-images-o490007352-p490007352-2-202206241206.jpg",
-                  "https://www.jiomart.com/images/product/original/490007352/aashirvaad-select-sharbati-whole-wheat-atta-1-kg-legal-images-o490007352-p490007352-3-202206241206.jpg"
+                  "https://i.ebayimg.com/images/g/5DUAAOSw3dhmVfrL/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/9Z0AAOSwRdpmVfrL/s-l960.webp",
+                  
                 ],
-                "rating": 0,
-                "description": "Aashirvaad ensures that only superior quality ingredients reach your kitchen and Aashirvaad Select Sharbati stays true to that word. Made from the King of Wheat Sharbati, Aashirvaad Select is a premium quality aata which is made with love in India. This sharbati wheat flour contains MP Sharbati wheat from the select regions of Madhya Pradesh. The grains of sharabati atta are consistent in size and have a golden sheen to it. The dough made from the King of Wheat Sharbati, absorbs more water which leads to the rotis being sweet in taste and softer in texture. Buy Aashirvaad Select Sharbati Whole Wheat Atta now!",
+                "rating": 4,
+                "description": "New: A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item is handmade or was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details.",
                 "id": 16
               },
               {
-                "productName": "Aashirvaad Superior MP Whole Wheat Atta 2 kg",
+                "productName": "4 Packs Kitchen Spice Rack Organizer Storage Shelf Cabinet Jar Holder Wall Mount",
                 "price": "250",
                 "oldPrice": "300",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490750660/aashirvaad-superior-mp-whole-wheat-atta-2-kg-product-images-o490750660-p590150647-0-202203170807.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/pQoAAOSwSDJkM37q/s-l1600.webp",
                 "discount": "12",
-                "brand": "Aashirvaad",
+                "brand": "Neat-O",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/490750660/aashirvaad-superior-mp-whole-wheat-atta-2-kg-product-images-o490750660-p590150647-0-202203170807.jpg",
-                  "https://www.jiomart.com/images/product/original/490750660/aashirvaad-superior-mp-whole-wheat-atta-2-kg-product-images-o490750660-p590150647-1-202203170807.jpg",
-                  "https://www.jiomart.com/images/product/original/490750660/aashirvaad-superior-mp-whole-wheat-atta-2-kg-legal-images-o490750660-p590150647-2-202203170807.jpg",
-                  "https://www.jiomart.com/images/product/original/490750660/aashirvaad-superior-mp-whole-wheat-atta-2-kg-legal-images-o490750660-p590150647-3-202203170807.jpg"
+                  "https://i.ebayimg.com/images/g/pQoAAOSwSDJkM37q/s-l1600.webp",
+                  "https://i.ebayimg.com/images/g/CaAAAOSwSphls1rV/s-l960.webp",
+                  
                 ],
-                "rating": 4.5,
-                "description": "Aashirvaad Superior MP Whole Wheat Atta provides goodness of taste in every bite. Also, it has a sweet and aromatic taste that works together to give you fuller and softer rotis, every single time. Buy Aashirvaad Superior MP Whole Wheat Atta online now!\n",
+                "rating": 4.3,
+                "description": "New: A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable). Packaging should be the same as what is found in a retail store, unless the item is handmade or was packaged by the manufacturer in non-retail packaging, such as an unprinted box or plastic bag. See the seller's listing for full details.",
                 "id": 17
               },
-              {
-                "productName": "Chakki Atta 10 kg",
-                "price": "400",
-                "oldPrice": "450",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
-                "discount": "12",
-                "brand": "Private Label",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
-                  "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-1-202206231932.jpg"
-                ],
-                "rating": 4,
-                "description": "Chakki Atta is freshly made from the choicest grains. It is carefully ground using modern chakki technique. It is used to make a wide range of foods including bread, crumpets, muffins, noodles, pasta, biscuits, cakes, pastries, cereal bars, sweet and savoury snack foods, crackers, crisp-breads, sauces and confectioner. Buy Chakki Atta online now!\n",
-                "id": 18
-              },
-              {
-                "productName": "Good Life MP Wheat Chakki Atta 5 kg",
-                "price": "250",
-                "oldPrice": "280",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-0-202306131322.jpg",
-                "discount": "12",
-                "brand": "Good Life",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-0-202306131322.jpg",
-                  "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-1-202306131322.jpg",
-                  "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-2-202306131322.jpg",
-                  "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-legal-images-o491458272-p491458272-3-202306131322.jpg"
-                ],
-                "rating": 4,
-                "description": "Now get the best of health in every bite with Good Life MP Wheat Chakki Atta. The hygienic packaging ensures the product remains fresh over a period of time. Also, it has a sweet and aromatic taste that works together to give you fuller and softer rotis, every single time. Buy Good Life MP Wheat Chakki Atta online now!\n",
-                "id": 19
-              },
-              {
-                "productName": "Fortune Suji / Semolina 500 g",
-                "price": "26",
-                "oldPrice": "35",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-0-202305191005.jpg",
-                "discount": "12",
-                "brand": "Fortune",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-0-202305191005.jpg",
-                  "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-1-202305191005.jpg",
-                  "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-legal-images-o491695704-p590040931-2-202305191005.jpg"
-                ],
-                "rating": 5,
-                "description": "Fortune Suji / Semolina commonly called as wheat rawa is used as a batter ingredient as well as to make various other food items like upma and sheera. It is coarse in texture and is made of wheat. It is a versatile ingredient and easy to cook. It makes a perfect food for breakfast. Buy Fortune Suji / Semolina online now!\n",
-                "id": 20
-              },
-              {
-                "productName": "Wheatkart Whole Wheat Atta - 10 KG",
-                "price": "210",
-                "oldPrice": "250",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-product-images-orvondh0dpy-p596562517-0-202212221536.png",
-                "discount": "17",
-                "brand": "Wheatkart",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-product-images-orvondh0dpy-p596562517-0-202212221536.png",
-                  "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-legal-images-orvondh0dpy-p596562517-1-202212221536.png"
-                ],
-                "rating": 4.5,
-                "description": "Without adding any maida, we have 100% wheat flour to make the dough smoother.\n\nThe atta is so perfectly blended that the chappatis made by Wheatkart Atta are tastier and softer when they are cold.\n\nAtta or chakki atta is wheat flour from the Indian subcontinent that is mostly used to create flatbreads like chapati, roti, naan, paratha and puri.",
-                "id": 21
-              }
+              // {
+              //   "productName": "Chakki Atta 10 kg",
+              //   "price": "400",
+              //   "oldPrice": "450",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
+              //   "discount": "12",
+              //   "brand": "Private Label",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-0-202206231932.jpg",
+              //     "https://www.jiomart.com/images/product/original/491349660/chakki-atta-10-kg-product-images-o491349660-p491349660-1-202206231932.jpg"
+              //   ],
+              //   "rating": 4,
+              //   "description": "Chakki Atta is freshly made from the choicest grains. It is carefully ground using modern chakki technique. It is used to make a wide range of foods including bread, crumpets, muffins, noodles, pasta, biscuits, cakes, pastries, cereal bars, sweet and savoury snack foods, crackers, crisp-breads, sauces and confectioner. Buy Chakki Atta online now!\n",
+              //   "id": 18
+              // },
+              // {
+              //   "productName": "Good Life MP Wheat Chakki Atta 5 kg",
+              //   "price": "250",
+              //   "oldPrice": "280",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-0-202306131322.jpg",
+              //   "discount": "12",
+              //   "brand": "Good Life",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-0-202306131322.jpg",
+              //     "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-1-202306131322.jpg",
+              //     "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-product-images-o491458272-p491458272-2-202306131322.jpg",
+              //     "https://www.jiomart.com/images/product/original/491458272/good-life-mp-wheat-chakki-atta-5-kg-legal-images-o491458272-p491458272-3-202306131322.jpg"
+              //   ],
+              //   "rating": 4,
+              //   "description": "Now get the best of health in every bite with Good Life MP Wheat Chakki Atta. The hygienic packaging ensures the product remains fresh over a period of time. Also, it has a sweet and aromatic taste that works together to give you fuller and softer rotis, every single time. Buy Good Life MP Wheat Chakki Atta online now!\n",
+              //   "id": 19
+              // },
+              // {
+              //   "productName": "Fortune Suji / Semolina 500 g",
+              //   "price": "26",
+              //   "oldPrice": "35",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-0-202305191005.jpg",
+              //   "discount": "12",
+              //   "brand": "Fortune",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-0-202305191005.jpg",
+              //     "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-product-images-o491695704-p590040931-1-202305191005.jpg",
+              //     "https://www.jiomart.com/images/product/original/491695704/fortune-suji-semolina-500-g-legal-images-o491695704-p590040931-2-202305191005.jpg"
+              //   ],
+              //   "rating": 5,
+              //   "description": "Fortune Suji / Semolina commonly called as wheat rawa is used as a batter ingredient as well as to make various other food items like upma and sheera. It is coarse in texture and is made of wheat. It is a versatile ingredient and easy to cook. It makes a perfect food for breakfast. Buy Fortune Suji / Semolina online now!\n",
+              //   "id": 20
+              // },
+              // {
+              //   "productName": "Wheatkart Whole Wheat Atta - 10 KG",
+              //   "price": "210",
+              //   "oldPrice": "250",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-product-images-orvondh0dpy-p596562517-0-202212221536.png",
+              //   "discount": "17",
+              //   "brand": "Wheatkart",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-product-images-orvondh0dpy-p596562517-0-202212221536.png",
+              //     "https://www.jiomart.com/images/product/original/rvondh0dpy/wheatkart-whole-wheat-atta-10-kg-legal-images-orvondh0dpy-p596562517-1-202212221536.png"
+              //   ],
+              //   "rating": 4.5,
+              //   "description": "Without adding any maida, we have 100% wheat flour to make the dough smoother.\n\nThe atta is so perfectly blended that the chappatis made by Wheatkart Atta are tastier and softer when they are cold.\n\nAtta or chakki atta is wheat flour from the Indian subcontinent that is mostly used to create flatbreads like chapati, roti, naan, paratha and puri.",
+              //   "id": 21
+              // }
             ]
           },
           {
-            "cat_name": "masalas spices",
+            "cat_name": "Storage",
             "products": [
               {
-                "productName": "Good Life Jeera 100 g",
+                "productName": "3 Pack Shower Caddy Shelf Bathroom Basket Bath Storage Holder Organizer Rack NEW",
                 "price": "300",
                 "oldPrice": "350",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491185109/good-life-jeera-100-g-product-images-o491185109-p491185109-0-202306131531.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/s3MAAOSwXoNlR7ff/s-l1600.webp",
                 "discount": "10",
-                "brand": "Good Life ",
+                "brand": "Does not apply",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491185109/good-life-jeera-100-g-product-images-o491185109-p491185109-0-202306131531.jpg",
-                  "https://www.jiomart.com/images/product/original/491185109/good-life-jeera-100-g-product-images-o491185109-p491185109-1-202306131531.jpg",
-                  "https://www.jiomart.com/images/product/original/491185109/good-life-jeera-100-g-product-images-o491185109-p491185109-2-202306131531.jpg",
-                  "https://www.jiomart.com/images/product/original/491185109/good-life-jeera-100-g-legal-images-o491185109-p491185109-3-202306131531.jpg"
+                  "https://i.ebayimg.com/images/g/s3MAAOSwXoNlR7ff/s-l1600.webp",
+                  "https://i.ebayimg.com/images/g/D6cAAOSw-gBlR7fg/s-l960.webp",
+                  
                 ],
                 "rating": 4.5,
-                "description": "eera is an essential spice that is used for tempering dishes with a strong taste and aroma. It offers a sturdy, exclusive and soothing piquancy and aroma to the dishes. It's not only known for its flavour enhancing quality but also for its health benefits. Add an extra pinch of taste to your dish with Good Life Jeera. So go ahead and buy this product online today.",
+                "description": "3 PACK AND LARGE CAPACITY: Beautiful Looking And Extra Large Capacity Bathroom Shower Rack, Our 3-Piece Shower Bathroom Rack Not Only Meets Your Daily Toiletries Storage Needs, But Also Blends In With a Variety Of Decorative Styles. You Can Store Razors, Shower Balls, Loofahs And Other Shower Supplies. Suitable For Shower Storage In Bathrooms, Toilets, Kitchens, Bedrooms Or Other Places.",
                 "id": 22
               },
               {
-                "productName": "Maggi Masala Ae Magic 6 g (Pack of 12)",
+                "productName": "Desktop Bookcase Desk Organizer Book Support Bookshelf Storage Rack",
                 "price": "200",
                 "oldPrice": "250",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-product-images-o491410091-p491410091-0-202305181146.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/qOgAAOSw0-1mBBD-/s-l960.webp",
                 "discount": "10",
-                "brand": "Maggi",
+                "brand": "Unbranded",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-product-images-o491410091-p491410091-0-202305181146.jpg",
-                  "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-product-images-o491410091-p491410091-1-202305181146.jpg",
-                  "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-product-images-o491410091-p491410091-2-202305181146.jpg",
-                  "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-product-images-o491410091-p491410091-3-202305181146.jpg",
-                  "https://www.jiomart.com/images/product/original/491410091/maggi-masala-ae-magic-6-g-pack-of-12-legal-images-o491410091-p491410091-4-202305181146.jpg"
+                  "https://i.ebayimg.com/images/g/qOgAAOSw0-1mBBD-/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/T64AAOSwPUdmBBD-/s-l960.webp",
+                  
                 ],
                 "rating": 5,
-                "description": "Maggi Masala Ae Magic is that secret spice that instantly enhances the taste and aroma of any dish. Just add a teaspoon of this spice to flavoured rice, vegetable dishes, salads and snacks to make them flavoursome. Buy Maggi Masala Ae Magic online now!",
+                "description": "The desk bookcase is made of density board material, which is strong enough to hold multiple books, and rustic, artworks. Sizes 30.5cmx15cmx17cm/12.01inchx5.91inchx6.69inch, easy to install, effective shape to hold any size books easily.",
                 "id": 23
               },
               {
-                "productName": "Good Life Compounded Hing Powder 50 g",
+                "productName": "Storage Shelf Retractable Desktop Expandable Table Book Rack Cabinet Bookcase",
                 "price": "55",
                 "oldPrice": "85",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491279754/good-life-compounded-hing-powder-50-g-product-images-o491279754-p491279754-0-202205180454.jpg",
+                
+                "catImg": "https://i.ebayimg.com/images/g/gqgAAOSwwUpmRpAZ/s-l960.webp",
                 "discount": "10",
-                "brand": "Good Life",
+                "brand": "MP360",
                 "productImages": [
-                  "https://www.jiomart.com/images/product/original/491279754/good-life-compounded-hing-powder-50-g-product-images-o491279754-p491279754-0-202205180454.jpg",
-                  "https://www.jiomart.com/images/product/original/491279754/good-life-compounded-hing-powder-50-g-product-images-o491279754-p491279754-1-202205180454.jpg",
-                  "https://www.jiomart.com/images/product/original/491279754/good-life-compounded-hing-powder-50-g-product-images-o491279754-p491279754-2-202205180454.jpg",
-                  "https://www.jiomart.com/images/product/original/491279754/good-life-compounded-hing-powder-50-g-product-images-o491279754-p491279754-3-202205180454.jpg"
+                  "https://i.ebayimg.com/images/g/gqgAAOSwwUpmRpAZ/s-l960.webp",
+                  "https://i.ebayimg.com/images/g/mocAAOSwwIpmRpAZ/s-l960.webp",
                 ],
-                "rating": 4,
-                "description": "Hing (Asafoetida) has a slightly pungent smell but when added to pickles and curries it gives a delectable flavour. A tinge of Hing can turn your food more flavourful. The product helps in easy digestion too. Good Life Compounded Hing Powder serves as an ideal choice for all your cooking needs. Buy this product online today.",
+                "rating": 4.3,
+                "description": "This bookshelf is more than just a bookshelf, it can be used as a vertical display shelf, plant shelf, kitchen shelf, bathroom storage shelf, standing shelf units.Features multiple shelves for storing and displaying everyday essentials. Size: H x D x W 31.5 x 6.7 x (11.80 - 19.69) Inch    /    80 x 17 x (30 -50) cm",
                 "id": 24
               },
-              {
-                "productName": "VEEDINT CUMIN SEEDS, JEERA WHOLE, CUMIN SEED WHOLE, 1 KG PACK",
-                "price": "180",
-                "oldPrice": "220",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-0-202305151313.jpg",
-                "discount": "10",
-                "brand": "Veedint",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-0-202305151313.jpg",
-                  "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-1-202305151313.jpg",
-                  "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-2-202305151313.jpg"
-                ],
-                "rating": 5,
-                "description": "Cumin Seed Whole (Jeera), Natural. Cumin seeds are commonly used in Indian and South Asian cooking, as well as Mexican cuisine. They have a warm and aromatic flavor that resembles curry powder. The seeds are used as a key ingredient in Indian food, but can also be added to soups or sauces for flavoring purposes. The aromatic seed like fruit is elongated, ovoid, 3-6 mm long, slingtly bitter and has a warm flavour The flowers are white or rose coloured in small umbels. \n",
-                "id": 25
-              },
-              {
-                "productName": "Organic Tattva Cumin Seeds 100 g",
-                "price": "88",
-                "oldPrice": "110",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-0-202206021941.jpg",
-                "discount": "8",
-                "brand": "Organic Tattva",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-0-202206021941.jpg",
-                  "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-1-202206021941.jpg"
-                ],
-                "rating": 5,
-                "description": "Cumin seeds or Jeera is an essential spice that is used for tempering dishes with a strong taste and aroma. It offers a sturdy, exclusive and soothing piquancy and aroma to the dishes. It's not only known for its flavour enhancing quality but also for its health benefits. Add an extra pinch of taste to your dish with Organic Tattva Cumin Seeds. So go ahead and buy this product online today.\n",
-                "id": 26
-              },
-              {
-                "productName": "Lotus Spices Green Elaichi 10 g",
-                "price": "32",
-                "oldPrice": "55",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-0-202304291358.jpg",
-                "discount": "10",
-                "brand": "Lotus",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-0-202304291358.jpg",
-                  "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-1-202304291358.jpg"
-                ],
-                "rating": 4.5,
-                "description": "Green Elaichi or Green Cardamom is also known as the 'Queen of Spices'. It is the most common spice used in a variety of sweet and savoury dishes. It is also added to tea and coffee for its unique fragrance and flavour. Buy Lotus Spices Green Elaichi online today!\n",
-                "id": 27
-              }
+              // {
+              //   "productName": "VEEDINT CUMIN SEEDS, JEERA WHOLE, CUMIN SEED WHOLE, 1 KG PACK",
+              //   "price": "180",
+              //   "oldPrice": "220",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-0-202305151313.jpg",
+              //   "discount": "10",
+              //   "brand": "Veedint",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-0-202305151313.jpg",
+              //     "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-1-202305151313.jpg",
+              //     "https://www.jiomart.com/images/product/original/rvahttucjx/veedint-cumin-seeds-jeera-whole-cumin-seed-whole-1-kg-pack-product-images-orvahttucjx-p601512221-2-202305151313.jpg"
+              //   ],
+              //   "rating": 5,
+              //   "description": "Cumin Seed Whole (Jeera), Natural. Cumin seeds are commonly used in Indian and South Asian cooking, as well as Mexican cuisine. They have a warm and aromatic flavor that resembles curry powder. The seeds are used as a key ingredient in Indian food, but can also be added to soups or sauces for flavoring purposes. The aromatic seed like fruit is elongated, ovoid, 3-6 mm long, slingtly bitter and has a warm flavour The flowers are white or rose coloured in small umbels. \n",
+              //   "id": 25
+              // },
+              // {
+              //   "productName": "Organic Tattva Cumin Seeds 100 g",
+              //   "price": "88",
+              //   "oldPrice": "110",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-0-202206021941.jpg",
+              //   "discount": "8",
+              //   "brand": "Organic Tattva",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-0-202206021941.jpg",
+              //     "https://www.jiomart.com/images/product/original/491229671/organic-tattva-cumin-seeds-100-g-product-images-o491229671-p491229671-1-202206021941.jpg"
+              //   ],
+              //   "rating": 5,
+              //   "description": "Cumin seeds or Jeera is an essential spice that is used for tempering dishes with a strong taste and aroma. It offers a sturdy, exclusive and soothing piquancy and aroma to the dishes. It's not only known for its flavour enhancing quality but also for its health benefits. Add an extra pinch of taste to your dish with Organic Tattva Cumin Seeds. So go ahead and buy this product online today.\n",
+              //   "id": 26
+              // },
+              // {
+              //   "productName": "Lotus Spices Green Elaichi 10 g",
+              //   "price": "32",
+              //   "oldPrice": "55",
+              //   "weight": [
+              //     50,
+              //     100,
+              //     150,
+              //     200,
+              //     250,
+              //     500
+              //   ],
+              //   "catImg": "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-0-202304291358.jpg",
+              //   "discount": "10",
+              //   "brand": "Lotus",
+              //   "productImages": [
+              //     "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-0-202304291358.jpg",
+              //     "https://www.jiomart.com/images/product/original/493072642/lotus-spices-green-elaichi-15-g-product-images-o493072642-p593731219-1-202304291358.jpg"
+              //   ],
+              //   "rating": 4.5,
+              //   "description": "Green Elaichi or Green Cardamom is also known as the 'Queen of Spices'. It is the most common spice used in a variety of sweet and savoury dishes. It is also added to tea and coffee for its unique fragrance and flavour. Buy Lotus Spices Green Elaichi online today!\n",
+              //   "id": 27
+              // }
             ]
           },
-          {
-            "cat_name": "Rice & Rice Products",
-            "products": [
-              {
-                "productName": "Tata Sampann White Poha 500 g",
-                "price": "140",
-                "oldPrice": "180",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491614721/tata-sampann-white-poha-500-g-product-images-o491614721-p491614721-0-202203150346.jpg",
-                "discount": "20",
-                "brand": "Tata Sampann",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491614721/tata-sampann-white-poha-500-g-product-images-o491614721-p491614721-0-202203150346.jpg",
-                  "https://www.jiomart.com/images/product/original/491614721/tata-sampann-white-poha-500-g-product-images-o491614721-p491614721-1-202203150346.jpg"
-                ],
-                "rating": 5,
-                "description": "Poha (Rice Flakes) is a popular Indian breakfast, especially for those who are on a weight watch. It is made from beaten rice. Serve a hot plate of delicious poha topped with bhujia and coriander, along with a bowl of green chutney for your breakfast or snack time. Buy Tata Sampann White Poha online now!\n",
-                "id": 30
-              },
-              {
-                "productName": "Daawat Rozana Super Basmati Broken Rice 1 kg",
-                "price": "150",
-                "oldPrice": "190",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490863714/daawat-rozana-super-basmati-rice-1-kg-product-images-o490863714-p490863714-0-202203171018.jpg",
-                "discount": "12",
-                "brand": "Daawat",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/490863714/daawat-rozana-super-basmati-rice-1-kg-product-images-o490863714-p490863714-0-202203171018.jpg",
-                  "https://www.jiomart.com/images/product/original/490863714/daawat-rozana-super-basmati-rice-1-kg-product-images-o490863714-p490863714-1-202203171018.jpg",
-                  "https://www.jiomart.com/images/product/original/490863714/daawat-rozana-super-basmati-rice-1-kg-legal-images-o490863714-p490863714-2-202203171018.jpg"
-                ],
-                "rating": 4,
-                "description": "Basmati Broken Rice has been an integral part of different Broken Rice recipes in every Indian household. It is processed under the supervision of experts. It can be used in a variety of Broken Rice dishes including biryani, pulao, and other Indian dishes. One can have it with meat, curries, dals and many more food items. Buy Daawat Rozana Super Basmati Broken Rice online now!\n",
-                "id": 31
-              },
-              {
-                "productName": "Elina Long Grain Rice 1 kg",
-                "price": "140",
-                "oldPrice": "160",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491173885/elina-long-grain-rice-1-kg-product-images-o491173885-p491173885-0-202203151443.jpg",
-                "discount": "10",
-                "brand": "Elina",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491173885/elina-long-grain-rice-1-kg-product-images-o491173885-p491173885-0-202203151443.jpg",
-                  "https://www.jiomart.com/images/product/original/491173885/elina-long-grain-rice-1-kg-product-images-o491173885-p491173885-1-202203151443.jpg",
-                  "https://www.jiomart.com/images/product/original/491173885/elina-long-grain-rice-1-kg-legal-images-o491173885-p491173885-2-202203151443.jpg"
-                ],
-                "rating": 4,
-                "description": "Guests coming over for dinner? Put on your cooking aprons and cook some delicious rice recipes with Elina Long Grain Rice. The slender long grained rice is aromatic and nutritious at the same time. Its flavourful rich taste will earn you lots of appreciation from your visitors. It is a premium brand that focuses on providing good quality products at affordable rates. Buy Elina Long Grain Rice online now!\n\n",
-                "id": 32
-              },
-              {
-                "productName": "Daawat Rozana Gold Basmati Broken Rice 5 kg",
-                "price": "130",
-                "oldPrice": "170",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/490005638/daawat-rozana-gold-basmati-rice-5-kg-product-images-o490005638-p490005638-0-202203171005.jpg",
-                "discount": "8",
-                "brand": "Daawat",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/490005638/daawat-rozana-gold-basmati-rice-5-kg-product-images-o490005638-p490005638-0-202203171005.jpg",
-                  "https://www.jiomart.com/images/product/original/490005638/daawat-rozana-gold-basmati-rice-5-kg-product-images-o490005638-p490005638-1-202203171005.jpg",
-                  "https://www.jiomart.com/images/product/original/490005638/daawat-rozana-gold-basmati-rice-5-kg-legal-images-o490005638-p490005638-2-202203171005.jpg"
-                ],
-                "rating": 5,
-                "description": "Daawat Rozana Gold Basmati Broken Rice has been an integral part of different Broken Rice recipes in every Indian household. It is processed under the supervision of experts. It can be used in a variety of Broken Rice dishes including biryani, pulao, and other Indian dishes. One can have it with meat, curries, dals and many more food items. Buy Daawat Rozana Gold Basmati Broken Rice online now!\n",
-                "id": 33
-              },
-              {
-                "productName": "Daawat Rozana Super Basmati Broken Rice 5 kg",
-                "price": "100",
-                "oldPrice": "130",
-                "weight": [
-                  50,
-                  100,
-                  150,
-                  200,
-                  250,
-                  500
-                ],
-                "catImg": "https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-product-images-o491019524-p491019524-0-202203171025.jpg",
-                "discount": "10",
-                "brand": "Daawat",
-                "productImages": [
-                  "https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-product-images-o491019524-p491019524-0-202203171025.jpg",
-                  "https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-product-images-o491019524-p491019524-1-202203171025.jpg",
-                  "https://www.jiomart.com/images/product/original/491019524/daawat-rozana-super-basmati-rice-5-kg-legal-images-o491019524-p491019524-2-202203171025.jpg"
-                ],
-                "rating": 4.5,
-                "description": "Basmati Broken Rice is everyday Broken Rice that makes each meal memorable. It is ideal for people who like to include Broken Rice in their daily meal consumption. Aromatic, flavourful, and defined by its distinctly long and slender grains, Daawat Rozana Super Basmati Broken Rice turns every meal into comfort food. Go and grab your pack now! Buy Daawat Rozana Super Basmati Broken Rice online now!\n",
-                "id": 34
-              }
-            ]
-          }
+          
         ]
       },
       {
