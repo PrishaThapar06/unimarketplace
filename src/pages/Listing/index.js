@@ -9,9 +9,10 @@ import { MyContext } from '../../App';
 // import data from '../../data.js'
 
 const Listing = (props) => {
-    const [isOpenDropDown, setIsOpenDropDown] = useState(false);
-    const [isOpenDropDown2, setIsOpenDropDown2] = useState(false);
+    const [isOpenDropDown, setisOpenDropDown] = useState(false);
+    const [isOpenDropDown2, setisOpenDropDown2] = useState(false);
     const [showPerPage, setShowPerPage] = useState(3);
+
     const [data, setData] = useState([]);
     const context = useContext(MyContext);
     const { id } = useParams();
@@ -130,28 +131,48 @@ const Listing = (props) => {
                                     </p>
                                     <div className='ml-auto d-flex align-items-center'>
                                         <div className='tab_ position-relative'>
-                                            <Button className='btn_' onClick={() => setIsOpenDropDown(!isOpenDropDown)}>
+                                            <Button className='btn_' onClick={() => setisOpenDropDown(!isOpenDropDown)}>
                                                 <GridViewOutlinedIcon /> Show: {showPerPage * 5}
                                             </Button>
                                             {isOpenDropDown && (
                                                 <ul className='dropdownMenu'>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setShowPerPage(1)}>
+                                                        <Button className='align-items-center'
+                                                            onClick={() => {
+                                                                setisOpenDropDown(false)
+                                                                setShowPerPage(1);
+                                                            }}
+                                                        >
                                                             5
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setShowPerPage(2)}>
+                                                        <Button className='align-items-center'
+                                                            onClick={() => {
+                                                                setisOpenDropDown(false)
+                                                                setShowPerPage(2);
+                                                            }}
+                                                        >
                                                             10
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setShowPerPage(3)}>
+                                                        <Button className='align-items-center'
+                                                            onClick={() => {
+                                                                setisOpenDropDown(false)
+                                                                setShowPerPage(3);
+                                                            }}
+                                                        >
                                                             15
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setShowPerPage(4)}>
+                                                        <Button className='align-items-center'
+                                                            onClick={() => {
+                                                                setisOpenDropDown(false)
+                                                                setShowPerPage(4);
+                                                            }}
+                                                        >
                                                             20
                                                         </Button>
                                                     </li>
@@ -159,33 +180,33 @@ const Listing = (props) => {
                                             )}
                                         </div>
                                         <div className='tab_ ml-3 position-relative'>
-                                            <Button className='btn_' onClick={() => setIsOpenDropDown2(!isOpenDropDown2)}>
+                                            <Button className='btn_' onClick={() => setisOpenDropDown2(!isOpenDropDown2)}>
                                                 <FilterListOutlinedIcon /> Sort by: Featured{' '}
                                             </Button>
                                             {isOpenDropDown2 && (
                                                 <ul className='dropdownMenu'>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setIsOpenDropDown2(false)}>
+                                                        <Button className='align-items-center' onClick={() => setisOpenDropDown2(false)}>
                                                             Featured
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setIsOpenDropDown2(false)}>
+                                                        <Button className='align-items-center' onClick={() => setisOpenDropDown2(false)}>
                                                             Price: Low to High
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setIsOpenDropDown2(false)}>
+                                                        <Button className='align-items-center' onClick={() => setisOpenDropDown2(false)}>
                                                             Price: High to Low
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setIsOpenDropDown2(false)}>
+                                                        <Button className='align-items-center' onClick={() => setisOpenDropDown2(false)}>
                                                             Release Date
                                                         </Button>
                                                     </li>
                                                     <li>
-                                                        <Button className='align-items-center' onClick={() => setIsOpenDropDown2(false)}>
+                                                        <Button className='align-items-center' onClick={() => setisOpenDropDown2(false)}>
                                                             Avg. Rating
                                                         </Button>
                                                     </li>

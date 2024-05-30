@@ -1,12 +1,13 @@
 import React from 'react';
 import './footer.css';
-
 import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg'
 import Icon3 from '../../assets/images/icon-3.svg'
 import Icon4 from '../../assets/images/icon-4.svg'
 import Icon5 from '../../assets/images/icon-5.svg'
-import Logo from '../../assets/images/logo.svg';
+import Button from "@mui/material/Button";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import GridViewIcon from "@mui/icons-material/GridView";
 import { Link } from 'react-router-dom';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
@@ -110,9 +111,21 @@ const Footer = () => {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-md-3 part1'>
-                                <Link to='/'><img src={Logo} /></Link>
+                            <Link to={"/"}>
+  <Button
+    className="text-white catTab res-hide"
+    style={{
+      background: "linear-gradient(to right, #16a34a, #76e1f0)",
+      borderRadius: "0.375rem", // Tailwind's rounded-md equivalent
+      padding: "1rem 2rem", // Adjusting padding to make it more balanced
+      fontSize: "1.25rem", // Increase text size
+    }}
+  >
+    <span style={{ fontSize: "1.25rem" }}>UNI MARKET PLACE</span>
+  </Button>
+</Link>
                                 <br /><br />
-                                <p>Awesome grocery store website template</p>
+                                <p>Awesome website to help students</p>
                                 <br />
 
                                 <p><LocationOnOutlinedIcon /> <strong>Address</strong>: 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
@@ -216,18 +229,18 @@ const Footer = () => {
                                     <div className='phNo d-flex align-items-center mx-5'>
                                         <span><HeadphonesOutlinedIcon /></span>
                                         <div className='info ml-3'>
-                                            <h3 className='text-g mb-0'>1900 - 888</h3>
-                                            <p className='mb-0'>24/7 Support Center</p>
+                                            <h3 className='text-g mb-0'>9898 - 123</h3>
+                                            <p className='mb-0'>HelpLine Contact</p>
                                         </div>
                                     </div>
 
-                                    <div className='phNo d-flex align-items-center  mx-5'>
+                                    {/* <div className='phNo d-flex align-items-center  mx-5'>
                                         <span><HeadphonesOutlinedIcon /></span>
                                         <div className='info ml-3'>
                                             <h3 className='text-g mb-0'>1900 - 888</h3>
                                             <p className='mb-0'>24/7 Support Center</p>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
 
