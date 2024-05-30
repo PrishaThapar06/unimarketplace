@@ -23,6 +23,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Newsletter from '../../components/newsletter/index';
 import NewsletterImg from '../../assets/images/newletter.jpg';
+import { Height } from '@mui/icons-material';
 
 const Footer = () => {
     return (
@@ -33,14 +34,15 @@ const Footer = () => {
                     <div className='box d-flex align-items-center'>
                         <div className='info'>
                             <h2>Stay home & get your daily <br />needs from our shop</h2>
-                            <p>Start You'r Daily Shopping with Nest Mart</p>
+                            <p>Start You'r Daily Shopping with UniMarketPlace</p>
                             <br /><br className='res-hide' />
                             <Newsletter />
                         </div>
 
-                        <div className='relative -mt-2 transition-all duration-200 ease-in-out h-auto'>
-    <img src={NewsletterImg} className='w-100 rounded-2xl' />
-</div>
+                        <div className='hidden md:block' style={{paddingLeft:250}} >
+                            <img src={NewsletterImg} width={600} height={600}/>
+                        </div>
+
 
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import manaswini from "../../assets/images/manaswini.jpg";
+import manaswini from "../../assets/images/manaswini.jpg.JPG";
 import siddhant from "../../assets/images/sidhanth-Photoroom.png-Photoroom.png";
 import prisha from "../../assets/images/prisha.png";
 import monika from "../../assets/images/monika-Photoroom.png-Photoroom.png";

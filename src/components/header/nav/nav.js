@@ -58,7 +58,7 @@ const Nav = (props) => {
                 }}
               >
                 <GridViewIcon /> &nbsp;UNI MARKET PLACE
-                <KeyboardArrowDownIcon />
+                {/* <KeyboardArrowDownIcon /> */}
               </Button>
               </Link>
             </div>
@@ -140,7 +140,7 @@ const Nav = (props) => {
                     })}
 
                                     <li className='list-inline-item'>
-                                        <Button onClick={props.closeNav}><Link>About</Link></Button>
+                                        <Button onClick={props.closeNav}><Link to={'/about'}>About</Link></Button>
                                     </li>
 
 
@@ -175,7 +175,7 @@ const Nav = (props) => {
 
                         <div className="col">
                           <img
-                            src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-menu.png"
+                            src="https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/03/24185445/how-to-study-abroad.jpg"
                             className="w-100"
                           />
                         </div>
@@ -215,7 +215,7 @@ const Nav = (props) => {
                   </li>
                   <li className="list-inline-item">
                     <Button>
-                      <Link>Contact</Link>
+                      <Link to={'/contactus'}>Contact</Link>
                     </Button>
                   </li>
                 </ul>
