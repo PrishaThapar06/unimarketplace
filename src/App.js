@@ -33,6 +33,7 @@ function App() {
   const [isopenNavigation, setIsopenNavigation] = useState(false);
 
   const [isLogin, setIsLogin] = useState();
+  // const [isSignUp,setIsSignUp] = useState()
   const [isOpenFilters, setIsopenFilters] = useState(false);
 
   const [cartTotalAmount, setCartTotalAmount] = useState();
@@ -101,6 +102,11 @@ function App() {
     const is_Login = localStorage.getItem('isLogin');
     setIsLogin(is_Login);
   }
+
+  // const signUp = () =>{
+  //   const is_SignUp = localStorage.getItem('isSignUp')
+  //   setIsSignUp(is_SignUp)
+  // }
 
 
   const signOut = () => {
