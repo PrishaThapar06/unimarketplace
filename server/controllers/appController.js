@@ -7,7 +7,7 @@ import config from '../config.js';
 // Registration route
 export async function register(req, res) {
     try {
-        const { firstName, lastName, password, email } = req.body;
+        const { firstName, lastName, email, password } = req.body;
 
         // Check if required fields are provided
         if (!firstName || !lastName || !password || !email) {
@@ -27,8 +27,8 @@ export async function register(req, res) {
         const user = new User({
             firstName,
             lastName,
+            email,
             password: hashedPassword,
-            email
         });
 
         await user.save();

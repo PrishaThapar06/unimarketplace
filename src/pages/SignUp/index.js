@@ -54,6 +54,12 @@ const SignUp = () => {
                 });
 
                 console.log('Backend response:', response.data);
+
+                const { token, user } = response.data;
+
+                localStorage.setItem('token', token); 
+                context.signIn();
+
                 
                 setShowLoader(false);
                 setFormFields({
@@ -66,7 +72,7 @@ const SignUp = () => {
 
                 // Redirect to home page
                 localStorage.setItem('isLogin', true); 
-                context.signUp();
+                context.signIn();
 
                 navigate('/');
             } catch (error) {
@@ -81,34 +87,28 @@ const SignUp = () => {
 
     const signUpWithGoogle = async () => {
         const provider = new GoogleAuthProvider();
-
         setShowLoader(true);
-
+    
         try {
             const result = await signInWithPopup(auth, provider);
             const user = result.user;
-
-            // Register with backend
-            const response = await axios.post('http://localhost:8080/api/register', {
-                firstName: user.displayName.split(' ')[0],
-                lastName: user.displayName.split(' ')[1],
-                email: user.email,
-                password: user.uid // Or any other unique identifier
-            });
-
-            console.log('Backend response:', response.data);
             
-            setShowLoader(false);
-
-            // Redirect to home page
-            navigate('/');
+            // You can save the user information locally or handle it as needed
+            const token = await user.getIdToken();  // Retrieve Firebase ID token
+    
+            localStorage.setItem('token', token);  // Store the token in localStorage
+            localStorage.setItem('isLogin', true); 
+            context.signIn();
+            
+            
+            navigate('/');  // Redirect to home page
         } catch (error) {
             console.error(error);
             alert(error.message);
             setShowLoader(false);
         }
     };
-
+    
     const onChangeField = (e) => {
         const name = e.target.name;
         const value = e.target.value;

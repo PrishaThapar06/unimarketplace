@@ -66,6 +66,12 @@ const SignIn = () => {
                     password: '',
                 });
 
+                console.log('Sign In successful', user);
+
+            localStorage.setItem('isLogin', true); 
+            context.signIn();
+
+            setShowLoader(false);
                 history('/');
             } catch (error) {
                 console.error(error);
