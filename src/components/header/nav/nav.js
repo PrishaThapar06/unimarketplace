@@ -139,9 +139,9 @@ const Nav = (props) => {
                       );
                     })}
 
-                                    <li className='list-inline-item'>
+                                    {/* <li className='list-inline-item'>
                                         <Button onClick={props.closeNav}><Link to={'/about'}>About</Link></Button>
-                                    </li>
+                                    </li> */}
 
 
                                     <li className='list-inline-item position-static'>
@@ -209,9 +209,10 @@ const Nav = (props) => {
 
                                     </li> */}
                     <li className="list-inline-item">
-                    <Button onClick={props.closeNav}>
+                    {/* <Button onClick={props.closeNav}>
                       <Link>About</Link>
-                    </Button>
+                    </Button> */}
+                    <Button onClick={props.closeNav}><Link to={'/about'}>About</Link></Button>
                   </li>
                   <li className="list-inline-item">
                     <Button>

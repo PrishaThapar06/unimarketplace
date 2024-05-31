@@ -20,7 +20,7 @@ const About = () => {
                 className="mb-3 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl mt-5"
               >
                 Why{" "}
-                <span className=" bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">
+                <span className=" bg-gradient-to-r from-green-600 to-blue-500 bg-clip-text text-transparent">
                   UniMarketPlace?
                 </span>
               </h2>

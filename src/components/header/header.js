@@ -199,12 +199,12 @@ const Header = (props) => {
                                 <div className={`headerSearch d-flex align-items-center ${isopenSearch === true ? 'open' : ''}`}>
 
 
-                                    {/* {
+                                    {
                                             windowWidth < 992 &&
                                             <div className='countryWrapper mb-4 w-100'>
                                                 <Select data={countryList} placeholder={'Your Location'} icon={<LocationOnOutlinedIcon style={{ opacity: '0.5' }} />} />
                                             </div>
-                                        } */}
+                                        }
 
                                     {
                                         windowWidth < 992 && <div class="closeSearch" onClick={closeSearch}><ArrowBackIosIcon /></div>
@@ -223,9 +223,9 @@ const Header = (props) => {
 
                             <div className='col-sm-5 d-flex align-items-center part3 res-hide'>
                                 <div className='ml-auto d-flex align-items-center'>
-                                    <div className='countryWrapper'>
+                                    {/* <div className='countryWrapper'>
                                         <Select data={countryList} placeholder={'Your Location'} icon={<LocationOnOutlinedIcon style={{ opacity: '0.5' }} />} />
-                                    </div>
+                                    </div> */}
                                     <ClickAwayListener onClickAway={() => setisOpenDropDown(false)}>
                                         <ul className='list list-inline mb-0 headerTabs'>
                                             {/* <li className='list-inline-item'>
@@ -333,3 +333,6 @@ const Header = (props) => {
 }
 
 export default Header;
+
+
+

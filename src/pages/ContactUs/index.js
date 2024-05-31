@@ -95,7 +95,7 @@ const Contactus = () => {
               <div className="my-2 w-1/2 lg:w-1/4">
                 <button
                   type="submit"
-                  className="uppercase text-2xl font-bold tracking-wide bg-blue-900 text-gray-100 p-4 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                  className="uppercase text-2xl font-bold tracking-wide bg-green-700 text-gray-100 p-4 rounded-lg w-full focus:outline-none focus:shadow-outline"
                 >
                   Send Message
                 </button>
@@ -103,7 +103,7 @@ const Contactus = () => {
             </form>
           </div>
 
-          <div className="w-full lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
+          <div className="w-full lg:w-2/6 px-8 py-12 ml-auto bg-green-700 rounded-2xl">
             <div className="flex flex-col text-white">
               <div className="flex items-center gap-4">
                 <img className="w-20 h-20 rounded-full" src={siddhant} alt="" />
@@ -125,7 +125,7 @@ const Contactus = () => {
                     <a href="https://www.linkedin.com/in/siddhantjainn/" target="_blank">
                       <button
                         type="button"
-                        className="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-2xl px-4 py-3 text-center inline-flex items-center me-2"
+                        className="text-green-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-2xl px-4 py-3 text-center inline-flex items-center me-2"
                       >
                         <FaLinkedin className="mr-2" />
                         LinkedIn
@@ -134,7 +134,7 @@ const Contactus = () => {
                     <a href="mailto:jainsiddhant214@gmail.com">
                       <button
                         type="button"
-                        className="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-2xl px-4 py-3 text-center inline-flex items-center me-2"
+                        className="text-green-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-2xl px-4 py-3 text-center inline-flex items-center me-2"
                       >
                         <MdEmail className="mr-2" />
                         Email
@@ -159,7 +159,7 @@ const Contactus = () => {
 
       {showPopup && (
         <div className="fixed top-2 left-1/2 transform -translate-x-1/2 bg-white p-4 rounded-lg shadow-md">
-          <p className="text-blue-500 font-semibold">Thank you for your feedback!</p>
+          <p className="text-green-500 font-semibold">Thank you for your feedback!</p>
         </div>
       )}
     </>
