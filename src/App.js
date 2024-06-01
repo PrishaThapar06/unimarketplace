@@ -19,6 +19,7 @@ import SignUp from './pages/SignUp';
 import Loader from './assets/images/loading.gif';
 import Contactus from './pages/ContactUs';
 import data from './data';
+import MyUniMarket from './pages/MyUniMarket';
 
 
 const MyContext = createContext();
@@ -161,6 +162,7 @@ function App() {
           <Route exact={true} path="*" element={<NotFound />} />
           <Route exact={true} path="/about" element={<About />} />
           <Route exact={true} path="/contactus" element={<Contactus />} />
+          <Route exact={true} path="/myunimarket" element={<MyUniMarket />} />
         </Routes>
        <Footer/>
       </MyContext.Provider>
