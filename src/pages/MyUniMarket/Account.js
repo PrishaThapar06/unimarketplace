@@ -8,7 +8,10 @@ const Account = () => {
   <div className='w-full md:w-1/3 lg:w-1/5 p-4 '>
     <h1 className='text-2xl font-bold mb-4'>Personal Info</h1>
     <ul className='space-y-2'>
-      <li className='hover:underline cursor-pointer'>Personal Information</li>
+    <li className='hover:underline cursor-pointer'>
+  <a href="/myunimarket/personal-information" className="text-inherit">Personal Information</a>
+</li>
+
       <li className='hover:underline cursor-pointer'>Sign-in and security</li>
       <li className='hover:underline cursor-pointer'>Addresses</li>
       <li className='hover:underline cursor-pointer'>Feedback</li>
@@ -37,6 +40,9 @@ const Account = () => {
     <h1 className='text-2xl font-bold mb-4'>Selling</h1>
     <ul className='space-y-2'>
       <li className='hover:underline cursor-pointer'>Seller Dashboard</li>
+      <li className='hover:underline cursor-pointer'>
+      <a href="/myunimarket/sell-an-item" className="text-inherit">Sell an item</a>
+      </li>
       <li className='hover:underline cursor-pointer'>Subscriptions</li>
     </ul>
   </div>

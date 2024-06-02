@@ -6,6 +6,7 @@ import Logo from '../../assets/images/logo_findmyuni.jpeg';
 const Message = () => {
   const [val, setVal] = useState(false);
   const [selectedMessage, setSelectedMessage] = useState(null);
+  const [reply, setReply] = useState('');
 
   const messages = [
     {
@@ -30,6 +31,12 @@ const Message = () => {
       receivedDate: 'June 4, 2024'
     },
   ];
+
+  const handleSend = () => {
+    // Handle sending the reply message logic here
+    console.log('Reply sent:', reply);
+    setReply('');
+  };
 
   return (
     <>
@@ -110,6 +117,20 @@ const Message = () => {
                   <div className='text-right'>
                     <span className='text-sm text-gray-500'>Received on: {selectedMessage.receivedDate}</span>
                   </div>
+                </div>
+                <div className='mt-4'>
+                  <textarea
+                    value={reply}
+                    onChange={(e) => setReply(e.target.value)}
+                    className='w-full p-2 border border-gray-300 rounded-lg'
+                    placeholder='Type your message here...'
+                  />
+                  <button
+                    onClick={handleSend}
+                    className='mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg'
+                  >
+                    Send
+                  </button>
                 </div>
               </>
             ) : (
