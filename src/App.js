@@ -20,6 +20,8 @@ import Loader from './assets/images/loading.gif';
 import Contactus from './pages/ContactUs';
 import data from './data';
 import MyUniMarket from './pages/MyUniMarket';
+import Account from './pages/MyUniMarket/Account';
+import Message from './pages/MyUniMarket/Message';
 
 
 const MyContext = createContext();
@@ -163,6 +165,8 @@ function App() {
           <Route exact={true} path="/about" element={<About />} />
           <Route exact={true} path="/contactus" element={<Contactus />} />
           <Route exact={true} path="/myunimarket" element={<MyUniMarket />} />
+          <Route exact={true} path='/myunimarket/account' element={<Account/>}/>
+          <Route exact={true} path='/myunimarket/message' element={<Message/>}/>
         </Routes>
        <Footer/>
       </MyContext.Provider>

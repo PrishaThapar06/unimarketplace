@@ -1,12 +1,13 @@
 import React from 'react';
 import Summary from './Summary';
 import Purchases from './Purchases';
+import Nav from './Nav'
 
 const MyUniMarket = () => {
     return (
         <section className='MyUniMarket'>        
 
-<nav class="bg-gray-50 mt-10">
+{/* <nav class="bg-gray-50 mt-10">
     <div class="max-w-screen-xl px-4 py-3">
         <div class="flex">
             <ul class="flex flex-row font-lg font-bold mt-0 space-x-8 rtl:space-x-reverse text-md">
@@ -17,12 +18,13 @@ const MyUniMarket = () => {
                     <a href="#" class="text-gray-900 hover:underline">Messages</a>
                 </li>
                 <li>
-                    <a href="#" class="text-gray-900 hover:underline">Account</a>
+                    <a href="/myunimarket/account" class="text-gray-900 hover:underline">Account</a>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
+</nav> */}
+<Nav/>
 
             
 <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">

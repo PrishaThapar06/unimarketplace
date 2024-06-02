@@ -7,39 +7,39 @@ import config from '../config.js';
 // Registration route
 export async function register(req, res) {
     try {
-        const { firstName, lastName, email, password } = req.body;
-
-        // Check if required fields are provided
-        if (!firstName || !lastName || !password || !email) {
-            return res.status(400).send({ error: "Please provide first name, last name, password, and email" });
-        }
-
-        // Check for existing email
-        const existingEmail = await User.findOne({ email });
-        if (existingEmail) {
-            return res.status(400).send({ error: "Email already exists, please use a different one" });
-        }
-
-        // Hash the password
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        // Create and save the user
-        const user = new User({
-            firstName,
-            lastName,
-            email,
-            password: hashedPassword,
-        });
-
-        await user.save();
-
-        // Send success response
-        res.status(201).send({ msg: "User registered successfully" });
+      const { firstName, lastName, email, password } = req.body;
+  
+      // Check if required fields are provided
+      if (!firstName || !lastName || !password || !email) {
+        return res.status(400).send({ error: "Please provide first name, last name, password, and email" });
+      }
+  
+      // Check for existing email
+      const existingEmail = await User.findOne({ email });
+      if (existingEmail) {
+        return res.status(400).send({ error: "Email already exists, please use a different one" });
+      }
+  
+      // Hash the password
+      const hashedPassword = await bcrypt.hash(password, 10);
+  
+      // Create and save the user
+      const user = new User({
+        firstName,
+        lastName,
+        email,
+        password: hashedPassword,
+      });
+  
+      await user.save();
+  
+      // Send success response
+      res.status(201).send({ msg: "User registered successfully" });
     } catch (error) {
-        console.error("Registration error:", error);
-        res.status(500).send({ error: "Internal server error" });
+      console.error("Registration error:", error);
+      res.status(500).send({ error: "Internal server error" });
     }
-}
+  }
 
 // Login route
 export async function login(req, res) {
