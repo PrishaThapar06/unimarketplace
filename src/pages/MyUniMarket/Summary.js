@@ -2,11 +2,11 @@ import React from 'react';
 
 const Summary = () => {
     return (
-        <section className='w-[80%] mx-auto'>
+        <section className='w-[80%] mx-auto mt-10'>
         <div className='flex flex-col'>
         <div className='flex flex-col items-center text-center'>
-  <p>Get more out of My eBay</p>
-  <p>eBay's a big place, here is your space to keep an eye on the items that matter most to you.</p>
+  <p>Get more out of my UniMarket</p>
+  <p>UniMarket is a big place, here is your space to keep an eye on the items that matter most to you.</p>
 </div>
         <div className='grid grid-cols-3 gap-4'>
             
