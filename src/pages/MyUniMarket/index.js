@@ -1,6 +1,7 @@
 import React from 'react';
 import Summary from './Summary';
 import Purchases from './Purchases';
+import WatchList from './Watchlist';
 
 const MyUniMarket = () => {
     return (
@@ -88,8 +89,9 @@ const MyUniMarket = () => {
 </aside>
 
 <div>
-      <Summary />
+      {/* <Summary /> */}
       {/* <Purchases /> */}
+      <WatchList />
 </div>
 
 </div>
