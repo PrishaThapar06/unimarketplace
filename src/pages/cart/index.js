@@ -41,10 +41,10 @@ const Cart = () => {
     //     let response = null;
     //     cartItems.length !== 0 &&
     //         cartItems.map((item) => {
-    //             response = axios.delete(`http://localhost:5000/cartItems/${parseInt(item.id)}`);
+    //             response = axios.delete(`http://localhost:8080/cartItems/${parseInt(item.id)}`);
     //         })
     //     if (response !== null) {
-    //         getCartData("http://localhost:5000/cartItems");
+    //         getCartData("http://localhost:8080/cartItems");
     //     }
 
     //     context.emptyCart();
