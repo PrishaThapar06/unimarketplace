@@ -178,7 +178,7 @@ const DetailsPage = (props) => {
 
         showReviews();
 
-        getCartData("http://localhost:5000/cartItems");
+        getCartData("http://localhost:8080/cartItems");
 
     }, [id]);
 
