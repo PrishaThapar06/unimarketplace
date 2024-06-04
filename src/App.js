@@ -152,10 +152,7 @@ function App() {
     data.productData.length !== 0 &&
     <BrowserRouter>
       <MyContext.Provider value={value}>
-        {
-          isLoading===true && <div className='loader'><img src={Loader}/></div>
-        }
-
+       
         
         <Header data={data.productData} />
         <Routes>
