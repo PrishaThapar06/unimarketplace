@@ -24,6 +24,10 @@ import Account from './pages/MyUniMarket/Account';
 import Message from './pages/MyUniMarket/Message';
 import Profile from './pages/MyUniMarket/Profile';
 import Sell_an_item from './pages/MyUniMarket/Sell_an_item';
+import Subscriptions from './pages/MyUniMarket/Subscriptions';
+import Security from './pages/MyUniMarket/Security';
+import Addresses from './pages/MyUniMarket/Addresses';
+import Feedback from './pages/MyUniMarket/Feedback';
 
 
 const MyContext = createContext();
@@ -171,6 +175,10 @@ function App() {
           <Route exact={true} path='/myunimarket/message' element={<Message/>}/>
           <Route exact={true} path='/myunimarket/personal-information' element={<Profile/>}/>
           <Route exact={true} path='/myunimarket/sell-an-item' element={<Sell_an_item/>}/>
+          <Route exact={true} path='/myunimarket/subscriptions' element={<Subscriptions/>}/>
+          <Route exact={true} path='/myunimarket/security' element={<Security/>}/>
+          <Route exact={true} path='/myunimarket/addresses' element={<Addresses/>}/>
+          <Route exact={true} path='/myunimarket/feedback' element={<Feedback/>}/>
         </Routes>
        <Footer/>
       </MyContext.Provider>
