@@ -12,9 +12,15 @@ const Account = () => {
   <a href="/myunimarket/personal-information" className="text-inherit">Personal Information</a>
 </li>
 
-      <li className='hover:underline cursor-pointer'>Sign-in and security</li>
-      <li className='hover:underline cursor-pointer'>Addresses</li>
-      <li className='hover:underline cursor-pointer'>Feedback</li>
+<li className='hover:underline cursor-pointer'>
+  <a href="/myunimarket/security" className="text-inherit">Sign-in and Security</a>
+</li>
+<li className='hover:underline cursor-pointer'>
+  <a href="/myunimarket/addresses" className="text-inherit">Addresses</a>
+</li>
+      <li className='hover:underline cursor-pointer'>
+      <a href="/myunimarket/feedback" className="text-inherit">Feedback</a>
+      </li>
       <li className='hover:underline cursor-pointer'>Request your UniMarket data</li>
     </ul>
   </div>
@@ -43,7 +49,9 @@ const Account = () => {
       <li className='hover:underline cursor-pointer'>
       <a href="/myunimarket/sell-an-item" className="text-inherit">Sell an item</a>
       </li>
-      <li className='hover:underline cursor-pointer'>Subscriptions</li>
+      <li className='hover:underline cursor-pointer'>
+      <a href="/myunimarket/subscriptions" className="text-inherit">Subscriptions</a>
+      </li>
     </ul>
   </div>
 
