@@ -207,7 +207,7 @@ const DetailsPage = (props) => {
 
         try {
 
-            await axios.post("http://localhost:5000/productReviews", reviewFields).then((response) => {
+            await axios.post("http://localhost:8080/productReviews", reviewFields).then((response) => {
                 reviews_Arr.push(response.data);
                 setReviewFields(() => ({
                     review: '',
@@ -228,7 +228,7 @@ const DetailsPage = (props) => {
     var reviews_Arr2 = [];
     const showReviews = async () => {
         try {
-            await axios.get("http://localhost:5000/productReviews").then((response) => {
+            await axios.get("http://localhost:8080/productReviews").then((response) => {
                 if (response.data.length !== 0) {
                     response.data.map((item) => {
                         if (parseInt(item.productId) === parseInt(id)) {
