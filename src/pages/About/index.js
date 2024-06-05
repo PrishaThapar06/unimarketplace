@@ -4,6 +4,7 @@ import prisha from "../../assets/images/prisha.png";
 import monika from "../../assets/images/monika-Photoroom.png-Photoroom.png";
 import manoj from "../../assets/images/manoj.jpeg";
 import khushi from "../../assets/images/khushi-Photoroom.png-Photoroom.png";
+import kartikey from '../../assets/images/Kartikey.png'
 
 
 import Cards from "./Cards.js";
@@ -63,16 +64,16 @@ const About = () => {
             <div className="mb-8">
               <img
                 className="object-center  object-cover rounded-full h-36 w-36"
-                src={manaswini}
+                src={kartikey}
                 alt="photo"
               />
             </div>
             <div className="text-center">
               <p className="text-2xl text-gray-700 font-bold mb-2">
-                Miss. Manaswini Voolapalli
+                Mr. Kartikey Bharadwaj
               </p>
               <p className="text-xl text-gray-400 font-normal">
-                Developer
+                Advisor & Developer
               </p>
             </div>
           </div>
@@ -90,6 +91,23 @@ const About = () => {
               </p>
               <p className="text-xl text-gray-400 font-normal">
                 Frontend developer
+              </p>
+            </div>
+          </div>
+          <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
+            <div className="mb-8">
+              <img
+                className="object-center object-cover rounded-full h-36 w-36"
+                src={manaswini}
+                alt="photo"
+              />
+            </div>
+            <div className="text-center">
+              <p className="text-2xl text-gray-700 font-bold mb-2">
+                Miss. Manaswini Voolapalli
+              </p>
+              <p className="text-xl text-gray-400 font-normal">
+                Developer
               </p>
             </div>
           </div>
