@@ -29,10 +29,10 @@ const HomeSlider = () => {
 
     return (
         <section className='homeSlider'>
-            <div className='container-fluid position-relative'>
+            <div className='container-fluid position-relative flex justify-center'>
                 <Slider {...settings} className='home_slider_Main'>
                     <div className="item">
-                        <img src={Slide1} className='w-100'style={{ height: 'auto' }} />
+                        <img src={Slide1} className='w-100 h-100' />
                         <div className='info'>
                             <h2 class="mb-4">
                                 Don’t miss amazing<br />
@@ -42,7 +42,7 @@ const HomeSlider = () => {
                         </div>
                     </div>
                     <div className="item">
-                        <img src={Slide2} className='w-100' />
+                        <img src={Slide2} className='w-100 h-100' />
                         <div className='info'>
                             <h2 class="mb-3">
                                 New Furniture<br />

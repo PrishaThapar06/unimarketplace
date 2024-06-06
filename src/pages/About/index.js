@@ -4,6 +4,7 @@ import prisha from "../../assets/images/prisha.png";
 import monika from "../../assets/images/monika-Photoroom.png-Photoroom.png";
 import manoj from "../../assets/images/manoj.jpeg";
 import khushi from "../../assets/images/khushi-Photoroom.png-Photoroom.png";
+import kartikey from "../../assets/images/Kartikey.png";
 
 
 import Cards from "./Cards.js";
@@ -43,7 +44,7 @@ const About = () => {
             Meet Our Dynamic Team
           </h1>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6">
           <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
             <div className="mb-8">
               <img
@@ -89,12 +90,26 @@ const About = () => {
                 Miss. Prisha Thapar
               </p>
               <p className="text-xl text-gray-400 font-normal">
-                Frontend developer
+                Developer
               </p>
             </div>
           </div>
           <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
             <div className="mb-8">
+              <img
+                className="object-center object-cover rounded-full h-36 w-36"
+                src={kartikey}
+                alt="photo"
+              />
+            </div>
+            <div className="text-center">
+              <p className="text-2xl text-gray-700 font-bold mb-2">
+              Mr. Kartikey Bhardwaj
+              </p>
+              <p className="text-xl text-gray-400 font-normal">Advisor</p>
+            </div>
+          </div>
+            {/* <div className="mb-8">
               <img
                 className="object-center object-cover rounded-full h-36 w-36"
                 src={manoj}
@@ -107,8 +122,8 @@ const About = () => {
               </p>
               <p className="text-xl text-gray-400 font-normal">Advisor</p>
             </div>
-          </div>
-          <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
+          </div> */}
+          {/* <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
             <div className="mb-8">
               <img
                 className="object-center object-cover rounded-full h-36 w-36"
@@ -137,7 +152,7 @@ const About = () => {
               </p>
               <p className="text-xl text-gray-400 font-normal">Advisor</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

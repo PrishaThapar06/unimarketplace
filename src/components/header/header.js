@@ -9,7 +9,7 @@ import IconCompare from '../../assets/images/icon-compare.svg';
 import IconHeart from '../../assets/images/icon-heart.svg';
 import IconCart from '../../assets/images/icon-cart.svg';
 import IconUser from '../../assets/images/icon-user.svg';
-
+import GridViewIcon from "@mui/icons-material/GridView";
 import Button from '@mui/material/Button';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -134,7 +134,7 @@ const Header = (props) => {
                         <div className='row'>
                             <div className='col-sm-2 part1 d-flex align-items-center'>
                                 <span>
-                                <Link to="https://www.findmyuni.co.in/">
+                                {/* <Link to="https://www.findmyuni.co.in/">
                                 <button type="button"               style={{
                 color: 'white',
                 background: 'linear-gradient(to right, #38b2ac, #63b3ed)', // Tailwind's from-green-500 to-blue-400
@@ -161,7 +161,23 @@ const Header = (props) => {
                                             Back to FindMyUni
                                         </div>
                                     </button>
-                                </Link>
+                                </Link> */}
+                                <div className="col-sm-2 part1 d-flex align-items-center">
+            <Link to={"/"} onClick={props.closeNav}>
+              <Button
+                className="text-white catTab res-hide"
+                style={{
+                  background: "linear-gradient(to right, #16a34a, #76e1f0)",
+                  borderRadius: "0.375rem", // Tailwind's rounded-md equivalent
+                  width: "200px",
+                  height: "100px",
+                  fontSize: "1.2rem",
+                }}
+              >
+                <GridViewIcon /> &nbsp;UNI MARKET PLACE
+              </Button>
+              </Link>
+            </div>
                                 </span>
                                 {
                                     windowWidth < 992 &&
