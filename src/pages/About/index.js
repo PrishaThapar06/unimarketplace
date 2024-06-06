@@ -70,7 +70,7 @@ const About = () => {
             </div>
             <div className="text-center">
               <p className="text-2xl text-gray-700 font-bold mb-2">
-                Miss. Manaswini Voolapalli
+                Miss. Manaswini
               </p>
               <p className="text-xl text-gray-400 font-normal">
                 Developer
@@ -99,7 +99,6 @@ const About = () => {
               <img
                 className="object-center object-cover rounded-full h-36 w-36"
                 src={kartikey}
-                alt="photo"
               />
             </div>
             <div className="text-center">
@@ -110,6 +109,15 @@ const About = () => {
             </div>
           </div>
             {/* <div className="mb-8">
+                Miss. Manaswini Voolapalli
+              </p>
+              <p className="text-xl text-gray-400 font-normal">
+                Developer
+              </p>
+            </div>
+          </div>
+          <div className="w-full bg-white rounded-lg p-2 flex flex-col justify-center items-center">
+            <div className="mb-8">
               <img
                 className="object-center object-cover rounded-full h-36 w-36"
                 src={manoj}
