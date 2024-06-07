@@ -34,7 +34,7 @@ const HomeSlider = () => {
                     <div className="item">
                         <img src={Slide1} className='w-100 h-100' />
                         <div className='info'>
-                            <h2 class="mb-4">
+                            <h2 class="mb-4 ">
                                 Don’t miss amazing<br />
                                 deals on furniture
                             </h2>

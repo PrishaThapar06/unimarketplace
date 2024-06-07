@@ -163,9 +163,10 @@ const Home = (props) => {
 
     return (
         <div style={{ display: 'block' }}>
-            <SliderBanner />
-            <CatSlider data={prodData} />
+            <div style={{margin:0}}><SliderBanner /></div>
+            
             <Banners />
+            <CatSlider data={prodData} />
 
             <section className='homeProducts homeProductWrapper'>
                 <div className='container-fluid'>
