@@ -29,7 +29,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensure it takes up the full viewport height */
+    min-height: 70vh; /* Ensure it takes up the full viewport height */
+    margin: 0 !important; /* Use !important to override any other margins */
+}
+
+.homeSlider .container-fluid {
+    margin: 0 !important; /* Ensure there's no margin from the container-fluid */
 }
 
 .home_slider_Main {
@@ -37,8 +42,12 @@
     overflow: hidden;
     position: relative;
     width: 66.67%; /* 2/3 of the original width */
-    height: 50vh; /* 1/2 of the original height */
+    height: 70vh; /* 1/2 of the original height */
+    margin: 0 !important; /* Ensure no margin for the Slider */
 }
+
+/* Adjust other styles as needed */
+
 
 .slick-arrow {
     position: absolute;
