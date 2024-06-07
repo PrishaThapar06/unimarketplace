@@ -169,8 +169,8 @@ const Header = (props) => {
                 style={{
                   background: "linear-gradient(to right, #16a34a, #76e1f0)",
                   borderRadius: "0.375rem", // Tailwind's rounded-md equivalent
-                  width: "200px",
-                  height: "100px",
+                  width: "250px",
+                  height: "60px",
                   fontSize: "1.2rem",
                 }}
               >
